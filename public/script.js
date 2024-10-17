@@ -49,8 +49,8 @@ window.addEventListener('scroll', function() {
 });
 
 const teamData = [
-    { name: "John Doe", role: "Founder", bio: "Passionate about making a difference..." },
-    { name: "Jane Smith", role: "Director", bio: "Focused on fostering communication..." }
+    { name: "Jon Fleischer", role: "Founder", bio: "Passionate about making a difference..." },
+    { name: "David Menache", role: "IT", bio: "Assisting with website and communications..." }
 ];
 
 function loadTeam() {
