@@ -12,12 +12,15 @@
         <h1>Communication is Vital and Vitality is Life</h1>
     </header>
 
-    <div id="tabs">
+    <div id="tabs" class="tab-container">
         <button onclick="showSection('mission')">Mission</button>
         <button onclick="showSection('about')">About Us</button>
         <button onclick="showSection('contact')">Contact</button>
     </div>
-    <div id="content"></div>
+
+    <!-- Placeholder for dynamic content -->
+    <div id="content" class="content-container"></div>
+
 
     <section id="team" class="reveal">
         <h2>Meet Our Team</h2>
@@ -34,9 +37,23 @@
     </div>
 
     <footer>
-        <h4>Contact Us</h4>
-        <p>Email: info@communicationvital.com</p>
-        <p>Follow us on social media: Facebook | Instagram | Twitter</p>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:jdfly19@yahoo.com">jdfly19@yahoo.com</a></p>
+                <p>Phone: <a href="tel:+16617433143">‪(661) 743-3143‬</a></p>
+            </div>
+            <div class="footer-item">
+                <h4>Follow Us</h4>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Twitter</a></p>
+            </div>
+            <div class="footer-item">
+                <h4>About</h4>
+                <p>We are committed to supporting individuals with communication challenges. Learn more about our mission and initiatives.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="/script.js"></script>
