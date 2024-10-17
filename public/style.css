@@ -141,3 +141,42 @@ footer a:hover {
     border-radius: 10px;
 }
 
+/* Meet Our Team Section */
+#team {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#team div {
+    margin: 20px 0;
+}
+
+/* Subscribe Button as a Call to Action */
+.subscribe-button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #ff4500;
+}
+
