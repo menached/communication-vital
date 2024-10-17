@@ -3,7 +3,7 @@
 Welcome to the **Communication is Vital** project! This website aims to raise awareness and support for individuals with autistic language deficiencies and other communication challenges. Our mission is to provide a supportive, safe, and inclusive environment where everyone, regardless of their abilities, has the opportunity to thrive and communicate effectively.
 
 ## 🌐 Live Demo
-You can access the live version of this project hosted on S3 at [communication-vital.org].
+You can access the live version of this project hosted on S3 at [[verballychallenged.com](https://verballychallengedcom.wordpress.com/)].
 
 ## 📜 Project Overview
 
