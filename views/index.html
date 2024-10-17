@@ -11,6 +11,27 @@
         <h1>Communication is Vital and Vitality is Life</h1>
     </header>
 
+
+    <div id="tabs">
+        <button onclick="showSection('mission')">Mission</button>
+        <button onclick="showSection('about')">About Us</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+    <div id="content"></div>
+    <script>
+        const contentData = {
+            mission: "<h2>Our Mission</h2><p>To promote...</p>",
+            about: "<h2>About Us</h2><p>We believe in...</p>",
+            contact: "<h2>Contact</h2><p>Email us at...</p>"
+        };
+
+        function showSection(section) {
+            document.getElementById('content').innerHTML = contentData[section];
+        }
+    </script>
+
+
+
     <section class="mission">
         <h2>Mission</h2>
         <p>To create and promote a rewarding enduring life path for individuals suffering from autistic language deficiencies and other communication challenges.</p>
