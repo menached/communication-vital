@@ -20,13 +20,33 @@
 
     <!-- Placeholder for dynamic content -->
     <div id="content" class="content-container">
-        <img src="public/communication-vital-banner1.webp" alt="Welcome Banner" class="responsive-banner">
+        <img src="communication-vital-banner1.webp" alt="Welcome Banner" class="responsive-banner">
     </div>
 
     <section id="team" class="reveal">
     </section>
 
-    <button onclick="toggleModal()" class="subscribe-button">Subscribe</button>
+
+    <form id="subscribeForm">
+      <input type="email" id="form-email" name="email" placeholder="Enter your email" required />
+      <button type="submit" class="subscribe-button">Subscribe</button>
+    </form>
+
+    <!-- Area to display response message -->
+    <div id="subscribe-message"></div>
+
+
+
+    <!--<button onclick="toggleModal()" class="subscribe-button">Subscribe</button>-->
+
+    <!--<form id="subscribeForm">-->
+      <!--<input type="email" id="email" name="email" placeholder="Enter your email" required />-->
+      <!--<button type="submit" class="subscribe-button">Subscribe</button>-->
+    <!--</form>-->
+
+    <!--[> Area to display response message <]-->
+    <!--<div id="subscribe-message"></div>-->
+
 
     <div id="modal" class="modal hidden">
         <div class="modal-content">
