@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication is Vital</title>
+    <link rel="stylesheet" href="https://www.inthingslimited.com/communication-vital/style.css">
+</head>
+<body>
+    <header>
+        <h1>Communication is Vital and Vitality is Life</h1>
+    </header>
+
+    <div id="tabs" class="tab-container">
+        <button onclick="showSection('mission')">Mission</button>
+        <button onclick="showSection('about')">About Us</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <!-- Placeholder for dynamic content -->
+    <div id="content" class="content-container">
+        <img src="public/communication-vital-banner1.webp" alt="Welcome Banner" class="responsive-banner">
+    </div>
+
+    <section id="team" class="reveal">
+    </section>
+
+    <button onclick="toggleModal()" class="subscribe-button">Subscribe</button>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span onclick="toggleModal()" class="close">&times;</span>
+            <p>Join our newsletter</p>
+            <input type="email" placeholder="Enter your email" id="email">
+            <button onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:jdfly19@yahoo.com">jdfly19@yahoo.com</a></p>
+                <p>Phone: <a href="tel:+16617433143">‪(661) 743-3143‬</a></p>
+            </div>
+            <div class="footer-item">
+                <h4>Follow Us</h4>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Twitter</a></p>
+            </div>
+            <div class="footer-item">
+                <h4>About</h4>
+                <p>We are committed to supporting individuals with communication challenges. Learn more about our mission and initiatives.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.inthingslimited.com/communication-vital/script.js"></script>
+</body>
+</html>
