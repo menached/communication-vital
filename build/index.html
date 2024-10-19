@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Communication is Vital</title>
-    <link rel="stylesheet" href="https://www.inthingslimited.com/communication-vital/style.css">
+    <link rel="stylesheet" href="https://verballychallenged.inthingslimited.com/communication-vital/style.css">
 </head>
 <body>
     <header>
@@ -23,39 +22,23 @@
         <img src="communication-vital-banner1.webp" alt="Welcome Banner" class="responsive-banner">
     </div>
 
-    <section id="team" class="reveal">
-    </section>
+    <section id="team" class="reveal"></section>
 
+    <!-- Subscribe Button to Open Modal -->
+    <button onclick="toggleModal()" class="subscribe-button">Subscribe</button>
 
-    <form id="subscribeForm">
-      <input type="email" id="form-email" name="email" placeholder="Enter your email" required />
-      <button type="submit" class="subscribe-button">Subscribe</button>
-    </form>
-
-    <!-- Area to display response message -->
-    <div id="subscribe-message"></div>
-
-
-
-    <!--<button onclick="toggleModal()" class="subscribe-button">Subscribe</button>-->
-
-    <!--<form id="subscribeForm">-->
-      <!--<input type="email" id="email" name="email" placeholder="Enter your email" required />-->
-      <!--<button type="submit" class="subscribe-button">Subscribe</button>-->
-    <!--</form>-->
-
-    <!--[> Area to display response message <]-->
-    <!--<div id="subscribe-message"></div>-->
-
-
+    <!-- Subscribe Modal -->
     <div id="modal" class="modal hidden">
         <div class="modal-content">
             <span onclick="toggleModal()" class="close">&times;</span>
             <p>Join our newsletter</p>
-            <input type="email" placeholder="Enter your email" id="email">
+            <input type="email" placeholder="Enter your email" id="modal-email" required>
             <button onclick="submitForm()">Submit</button>
         </div>
     </div>
+
+    <!-- Area to display response message -->
+    <div id="subscribe-message"></div>
 
     <footer>
         <div class="footer-container">
@@ -77,6 +60,7 @@
         </div>
     </footer>
 
-    <script src="https://www.inthingslimited.com/communication-vital/script.js"></script>
+    <script src="https://verballychallenged.inthingslimited.com/communication-vital/script.js"></script>
 </body>
 </html>
+
