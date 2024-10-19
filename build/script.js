@@ -4,22 +4,23 @@ const contentData = {
         <h2>Our Mission</h2>
         <p>Our mission is to foster a supportive community for individuals with autistic language deficiencies and other communication challenges. We believe in the power of connection and inclusivity, providing a safe space where everyone can thrive.</p>
         <h3>Core Principles</h3>
-        <ul>
-            <li>All people deserve to be understood and supported</li>
-            <li>Disability and challenges do not have to prevent a great life</li>
-            <li>Everyone deserves a solid chance in life no matter what obstacles they face</li>
-            <li>Safety is the first consideration, and all development follows from there</li>
-        </ul>
-        <h3>Our Aim</h3>
+            <ul class="fancy-icons-list">
+                <li><i class="fas fa-hands-helping"></i> All people deserve to be understood and supported</li>
+                <li><i class="fas fa-heart"></i> Disability and challenges do not have to prevent a great life</li>
+                <li><i class="fas fa-equals"></i> Everyone deserves a solid chance in life no matter what obstacles they face</li>
+                <li><i class="fas fa-shield-alt"></i> Safety is the first consideration, and all development follows from there</li>
+            </ul>
+            <hr style=width:100%;align:center;text-align:center;> 
+        <h3><i class="fas fa-bullseye"></i> Our Aim</h3>
         <p>We aim to engage with, teach, and learn from a community of similarly language-challenged non-verbal adults and developmentally disabled individuals from all walks of life. Our strategy is to build a certified autism-friendly community where participants may live full time, part-time, or visit daily.</p>
-        <h3>Our Challenge</h3>
+        <h3><i class="fas fa-exclamation-triangle"></i> Our Challenge</h3>
         <p>Many parents face the overwhelming prospect that there is no place for their aging family members to reside and thrive once they can no longer provide for them. This issue is growing rapidly and creates enormous emotional strain for parents.</p>
-        <h3>Stats</h3>
+        <h3><i class="fas fa-chart-bar"></i> Stats</h3>
         <p>Autism is one of the fastest-growing disabilities. Non-verbal and minimally verbal individuals make up 25-30% of the autistic population.</p>
         <p>Today’s graduating classes report X number of non-verbal students per class.</p>
-        <h3>Our Community</h3>
+        <h3><i class="fas fa-users"></i> Our Community</h3>
         <p>The hub includes sensory centers, tiny home living spaces, a store, a restaurant, a farm, and medical and security facilities.</p>
-        <h3><a href="#" onclick="showSection('whatWeTeach')">What We Teach</a></h3> <!-- Clickable link for What we teach -->
+        <h3><i class="fas fa-chalkboard-teacher"></i><a href="#" onclick="showSection('whatWeTeach')">What We Teach</a></h3> <!-- Clickable link for What we teach -->
         <p>We offer life skills training, from basic personal hygiene to advanced community participation. We emphasize mentorship through our “leg up” program, pairing advanced participants with beginners.</p>
     `,
     about: `

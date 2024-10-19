@@ -411,3 +411,28 @@ a::after {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.fancy-icons-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fancy-icons-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fancy-icons-list li i {
+    color: #ff6600;  /* Customize icon color */
+    margin-right: 10px;
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+h3 i.fa-bullseye {
+    color: #000;  /* Customize icon color */
+    margin-right: 8px;  /* Adjust spacing between icon and text */
+    font-size: 1.2em;  /* Adjust icon size */
+}
+
