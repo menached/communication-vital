@@ -284,12 +284,43 @@ a:hover::after {
 }
 
 @media (min-width: 801px) {
-    .responsive-banner {
-        margin-bottom: 20px;  /* Add space below the banner image */
+    #tabs {
+        margin-bottom: 20px;  /* Adds space below the buttons */
     }
 
-    #tabs {
-        margin-top: 20px;  /* Add space above the buttons */
+    .responsive-banner {
+        margin-bottom: 20px;  /* Adds space below the banner image */
     }
+
+    #content {
+        padding-top: 20px;  /* Adds padding above the content on wider screens */
+    }
+}
+
+.star-link {
+    text-decoration: none;  /* Remove underline */
+    font-size: 3rem;  /* Adjust this to make the star symbol giant */
+    margin-left: 10px;  /* Space between the title and the star */
+    vertical-align: middle;  /* Align star with the title text */
+    color: #ffcc00;  /* Optional: Set a color for the star */
+}
+
+.star-link:hover {
+    color: #ffaa00;  /* Change color on hover */
+    cursor: pointer;  /* Show pointer when hovered */
+}
+
+
+/* For all links: Keep the link icon as is */
+a::after {
+    content: "🔗"; /* The link symbol */
+    font-size: 0.8em; /* Adjust the size of the icon */
+    margin-left: 5px; /* Space between the text and the icon */
+    vertical-align: middle; /* Align the icon with the text */
+}
+
+/* Disable the link icon for the star link */
+.no-link-icon::after {
+    content: ''; /* No icon for the star link */
 }
 
