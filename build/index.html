@@ -32,10 +32,27 @@
         <div class="modal-content">
             <span onclick="toggleModal()" class="close">&times;</span>
             <p>Join our newsletter</p>
-            <input type="email" placeholder="Enter your email" id="modal-email" required>
-            <button onclick="submitForm()">Submit</button>
+            <!-- Form for subscribing -->
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email" id="modal-email" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
+
+    <!-- Area to display response message -->
+    <div id="subscribe-message" class="hidden"></div>
+
+
+    <!--[> Subscribe Modal <]-->
+    <!--<div id="modal" class="modal hidden">-->
+        <!--<div class="modal-content">-->
+            <!--<span onclick="toggleModal()" class="close">&times;</span>-->
+            <!--<p>Join our newsletter</p>-->
+            <!--<input type="email" placeholder="Enter your email" id="modal-email" required>-->
+            <!--<button onclick="submitForm()">Submit</button>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <!-- Area to display response message -->
     <div id="subscribe-message"></div>

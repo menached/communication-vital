@@ -92,7 +92,9 @@ function toggleModal() {
 }
 
 // Function to submit the form inside the modal
-function submitForm() {
+function submitForm(event) {
+    event.preventDefault(); // Prevent actual form submission
+
     const email = document.getElementById('modal-email').value;  // Modal email field
     if (email) {
         fetch('https://7bkbty4nua.execute-api.us-west-2.amazonaws.com/prod/subscribe', {  // Replace with your API Gateway URL
@@ -108,18 +110,71 @@ function submitForm() {
                 document.getElementById('subscribe-message').innerHTML = `<p>${data.message}</p>`;
                 document.getElementById('modal-email').value = '';  // Clear the email field
                 toggleModal();  // Close the modal after successful submission
+                showSubscribeMessage();  // Show the success message
             } else {
                 document.getElementById('subscribe-message').innerHTML = '<p>Subscription failed. Please try again.</p>';
+                showSubscribeMessage();  // Show the error message
             }
         })
         .catch(error => {
             console.error('Error:', error);
             document.getElementById('subscribe-message').innerHTML = '<p>There was an error. Please try again later.</p>';
+            showSubscribeMessage();  // Show the error message
         });
     } else {
         alert('Please enter a valid email.');
     }
 }
+
+// Show the subscription message and hide it after a few seconds
+function showSubscribeMessage() {
+    const message = document.getElementById('subscribe-message');
+    message.classList.remove('hidden');  // Show the message
+    setTimeout(function() {
+        message.classList.add('hidden');  // Hide it after 3 seconds
+    }, 3000);
+}
+
+// Attach the form submission handler
+document.getElementById('subscribe-form').addEventListener('submit', submitForm);
+
+
+
+//// Function to toggle modal visibility
+//function toggleModal() {
+    //const modal = document.getElementById('modal');
+    //modal.classList.toggle('hidden');
+//}
+
+//// Function to submit the form inside the modal
+//function submitForm() {
+    //const email = document.getElementById('modal-email').value;  // Modal email field
+    //if (email) {
+        //fetch('https://7bkbty4nua.execute-api.us-west-2.amazonaws.com/prod/subscribe', {  // Replace with your API Gateway URL
+            //method: 'POST',
+            //headers: {
+                //'Content-Type': 'application/json'
+            //},
+            //body: JSON.stringify({ email: email })
+        //})
+        //.then(response => response.json())
+        //.then(data => {
+            //if (data.message) {
+                //document.getElementById('subscribe-message').innerHTML = `<p>${data.message}</p>`;
+                //document.getElementById('modal-email').value = '';  // Clear the email field
+                //toggleModal();  // Close the modal after successful submission
+            //} else {
+                //document.getElementById('subscribe-message').innerHTML = '<p>Subscription failed. Please try again.</p>';
+            //}
+        //})
+        //.catch(error => {
+            //console.error('Error:', error);
+            //document.getElementById('subscribe-message').innerHTML = '<p>There was an error. Please try again later.</p>';
+        //});
+    //} else {
+        //alert('Please enter a valid email.');
+    //}
+//}
 
 contentData.williamsStory = `
     <h2>William's Story</h2>
@@ -256,3 +311,66 @@ contentData.theWhy = `
     <p>Jon believes that no family should face the stress, anxiety, and fear that comes with wondering who will care for their loved one with special needs. His vision for this community is centered around understanding, compassion, and lifelong support.</p>
 `;
 
+// Show the subscription message and hide it after a few seconds
+function showSubscribeMessage(message) {
+    const messageContainer = document.getElementById('subscribe-message');
+    messageContainer.innerHTML = `<p>${message}</p>`;  // Set the message content
+    messageContainer.style.display = 'flex';  // Show the message
+    setTimeout(function() {
+        messageContainer.style.display = 'none';  // Hide it after 3 seconds
+    }, 3000);
+}
+
+// Function to submit the form inside the modal
+function submitForm(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    const email = document.getElementById('modal-email').value;  // Modal email field
+    if (email) {
+        fetch('https://7bkbty4nua.execute-api.us-west-2.amazonaws.com/prod/subscribe', {  // Replace with your API Gateway URL
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message) {
+                document.getElementById('modal-email').value = '';  // Clear the email field
+                toggleModal();  // Close the modal after successful submission
+                showSubscribeMessage(data.message);  // Show the success message
+            } else {
+                showSubscribeMessage('Subscription failed. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showSubscribeMessage('There was an error. Please try again later.');
+        });
+    } else {
+        alert('Please enter a valid email.');
+    }
+}
+
+// Attach the form submission handler
+document.getElementById('subscribe-form').addEventListener('submit', submitForm);
+
+
+
+  //function showSubscribeMessage() {
+    //// Show the message
+    //const message = document.getElementById('subscribe-message');
+    //message.style.display = 'flex';  // Change to 'flex' to apply the CSS
+
+    //// Hide the message after 3 seconds
+    //setTimeout(function() {
+      //message.style.display = 'none';
+    //}, 3000);
+  //}
+
+  //// Example function to simulate form submission
+  //document.getElementById("subscribe-form").onsubmit = function(event) {
+    //event.preventDefault();  // Prevent the form from actually submitting for demo purposes
+    //showSubscribeMessage();  // Show the message on submit
+  //}
