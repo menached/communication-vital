@@ -217,6 +217,41 @@ footer a:hover {
     margin: 20px 0;
 }
 
+#team-placeholder {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #777;
+    display: block;  /* Ensure it's displayed by default */
+}
+
+#team div {
+    display: none; /* Hide team content initially */
+}
+
+#team.visible div {
+    display: block; /* Show team content when the section becomes visible */
+    transition: opacity 0.5s ease-in; /* Smooth transition */
+}
+
+
+/*#team-placeholder {*/
+    /*text-align: center;*/
+    /*font-size: 1.5rem;*/
+    /*padding: 20px;*/
+    /*color: #777;*/
+/*}*/
+
+/*#team div {*/
+    /*display: none; [> Hide team content initially <]*/
+/*}*/
+
+/*#team.visible div {*/
+    /*display: block; [> Show team content when the section becomes visible <]*/
+    /*transition: opacity 0.5s ease-in; [> Add a smooth transition <]*/
+/*}*/
+
+
 /* Subscribe Button as a Call to Action */
 .subscribe-button {
     display: block;
@@ -327,8 +362,29 @@ a::after {
 /* Styles for smaller screens (mobile) */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.5rem; /* Adjust this size as needed */
-        white-space: nowrap; /* Prevent the text from wrapping */
+        font-size: 1.2rem; /* Adjust the title size for mobile */
+        white-space: nowrap; /* Prevent the title text from wrapping */
     }
+
+    /* Adjust the star icon size for mobile */
+    .star-link {
+        font-size: 2rem; /* Reduce star icon size on mobile */
+    }
+    #subscribe-message {
+        font-size: 14px;  /* Reduce font size for smaller screens */
+        width: 80%;  /* Increase width to prevent wrapping */
+    }
+    
+    #subscribe-message p {
+        white-space: nowrap;  /* Prevent the message from wrapping */
+    }
+}
+
+.gravatar-icon {
+    border-radius: 50%;  /* Make the image circular */
+    width: 80px;  /* Adjust the size */
+    height: 80px;
+    margin-right: 10px;  /* Space between image and text */
+    vertical-align: middle;  /* Align vertically */
 }
 
