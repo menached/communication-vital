@@ -27,11 +27,19 @@ const contentData = {
         <p>We are dedicated to building a certified autism-friendly community that offers opportunities for non-verbal adults and individuals with communication challenges. Our aim is to create a welcoming environment that supports growth and development for all.</p>
         <h3>The Who</h3>
         <p>We are a group of like-minded individuals passionate about making a difference:</p>
-        <ul>
-            <li><strong><a href="#" onclick="showSection('Jon')">Jon Fleischer</a>:</strong> Founding member and bilingual financial services veteran.</li>
-            <li><strong><a href="#" onclick="showSection('Larry')">Larry Banchero</a>:</strong> Entrepreneur and expert in multiple industries.</li>
-            <li><strong><a href="#" onclick="showSection('Brian')">Brian Fleischer, Esq.</a>:</strong> Dual citizen of the U.S. and Mexico, a lawyer with decades of experience.</li>
-            <li><strong><a href="#" onclick="showSection('David')">David Menache</a>:</strong> Network engineer and tech entrepreneur, contributing his technical expertise.</li>
+        <ul class="custom-list">
+            <li>
+                <strong><a href="#" onclick="showSection('Jon')">Jon Fleischer</a>:</strong> Founding member and bilingual financial services veteran.
+            </li>
+            <li>
+                <strong><a href="#" onclick="showSection('Larry')">Larry Banchero</a>:</strong> Entrepreneur and expert in multiple industries.
+            </li>
+            <li>
+                <strong><a href="#" onclick="showSection('Brian')">Brian Fleischer, Esq.</a>:</strong> Dual citizen of the U.S. and Mexico, a lawyer with decades of experience.
+            </li>
+            <li>
+                <strong><a href="#" onclick="showSection('David')">David Menache</a>:</strong> Network engineer and tech entrepreneur, contributing his technical expertise.
+            </li>
         </ul>
         <h3><a href="#" onclick="showSection('theWhy')">The Why</a></h3> 
         <p>Jon, like many parents, is concerned about providing for his special needs nephew once he’s unable. This program was created to ensure continued care and support for William and others like him.</p>

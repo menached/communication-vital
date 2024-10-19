@@ -388,3 +388,26 @@ a::after {
     vertical-align: middle;  /* Align vertically */
 }
 
+.custom-list {
+    list-style-type: none;  /* Remove default bullets */
+    padding-left: 40px;     /* Add padding to create space for the icons */
+}
+
+.custom-list li {
+    position: relative;     /* Set relative positioning to place the icon */
+    margin-bottom: 10px;    /* Add space between list items */
+    line-height: 1.6;       /* Adjust line height for readability */
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: -30px;            /* Adjust the position of the icon */
+    top: 0;
+    width: 24px;            /* Width of the silhouette icon */
+    height: 24px;           /* Height of the silhouette icon */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png');  /* Replace with your icon */
+    background-size: contain;  /* Make sure the image fits the container */
+    background-repeat: no-repeat;
+    background-position: center;
+}
