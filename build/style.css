@@ -324,3 +324,11 @@ a::after {
     content: ''; /* No icon for the star link */
 }
 
+/* Styles for smaller screens (mobile) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem; /* Adjust this size as needed */
+        white-space: nowrap; /* Prevent the text from wrapping */
+    }
+}
+
