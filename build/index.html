@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZXF57K15R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-JZXF57K15R');
+</script>
     <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +37,7 @@
     <link rel="icon" href="https://verballychallenged.inthingslimited.com/favicon.ico">
     <link rel="stylesheet" href="https://verballychallenged.inthingslimited.com/communication-vital/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
     <title>Verbal Pathways: Unlocking Verbal Expression in a Safe, Supportive Environment</title>
 </head>
@@ -37,7 +46,7 @@
     <header>
         <h1>
             <a href="/" class="star-link no-link-icon" title="Verbal Pathways: Unlocking verbal expression in a safe, supportive environment. ">⭐</a> 
-            <a href="/" class="star-link no-link-icon" title="Verbal Pathways: Unlocking verbal expression in a safe, supportive environment. ">Verbal Pathways</a>
+            <a href="/" style="position:relative;left:-10px;" class="star-link no-link-icon" title="Verbal Pathways: Unlocking verbal expression in a safe, supportive environment. ">Verbal Pathways</a>
         </h1>
     </header>
 
@@ -55,22 +64,28 @@
         </div>
     </div>
 
-    <section id="team" class="reveal">
+    <section id="team_reveal">
         <div id="team-placeholder">
-            <p>Meet our team...</p>
+            <!-- Default content to be shown initially -->
+            <p>Meet our amazing team! Scroll down to learn more...</p>
+        </div>
+        <div id="team-content" class="hidden">
+            <!-- This is where the team content will be loaded -->
+        <div id="team-full-bio" class="team-full-bio"></div>
+        </div>
+        <div id="team">
+            <div id="team-placeholder"></div>
         </div>
     </section>
 
-    <!--<section id="team" class="reveal"></section>-->
-
     <!-- Subscribe Button to Open Modal -->
-    <button onclick="toggleModal()" class="subscribe-button">Subscribe</button>
+    <button title="Let us know you stopped by!  We promise to to share your data.  We promise not to spam you." onclick="toggleModal()" class="subscribe-button">Sign our Guestbook!</button>
 
     <!-- Subscribe Modal -->
     <div id="modal" class="modal hidden">
         <div class="modal-content">
             <span onclick="toggleModal()" class="close">&times;</span>
-            <p>Join our newsletter</p>
+            <p>Sign our Guestbook</p>
             <!-- Form for subscribing -->
             <form id="subscribe-form">
                 <input type="email" placeholder="Enter your email" id="modal-email" required>
@@ -85,18 +100,18 @@
     <footer>
         <div class="footer-container">
             <div class="footer-item">
-                <h4>Contact Us</h4>
-                <p>Email: <a href="mailto:jdfly19@yahoo.com">jdfly19@yahoo.com</a></p>
+                <h4><i class="fa-solid fa-envelope"></i> Contact Us </h4>
+                <p>Email: <a href="mailto:jon@inthingslimited.com">jon@inthingslimited.com</a></p>
                 <p>Phone: <a href="tel:+16617433143">‪(661) 743-3143‬</a></p>
             </div>
             <div class="footer-item">
-                <h4>Follow Us</h4>
+                <h4><i class="fa-solid fa-share-alt"></i> Follow Us </h4>
                 <p><a href="#">Facebook</a></p>
                 <p><a href="#">Instagram</a></p>
                 <p><a href="#">Twitter</a></p>
             </div>
             <div class="footer-item">
-                <h4>About</h4>
+                <h4><i class="fa-solid fa-info-circle"></i> About </h4>
                 <p>We are committed to supporting individuals with communication challenges. Learn more about our mission and initiatives.</p>
             </div>
         </div>
