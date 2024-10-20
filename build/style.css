@@ -30,7 +30,7 @@ header {
 #tabs button {
     margin: 0 10px;
     padding: 10px 20px;
-    background-color: #eee;
+    background-color: #ff6600;
     border: none;
     cursor: pointer;
 }
@@ -351,7 +351,6 @@ a:hover::after {
 
 .star-link:hover {
     color: #ffaa00;  /* Change color on hover */
-    cursor: pointer;  /* Show pointer when hovered */
 }
 
 
@@ -772,3 +771,65 @@ h1:hover, h2:hover, h3:hover {
 
 
 
+/* General tooltip styling */
+.tooltip {
+    position: relative; /* Establish a containing block for the tooltip */
+    cursor: pointer;
+}
+
+/* Hidden by default */
+.tooltip::before, 
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: -150%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* Tooltip box */
+.tooltip::before {
+    background-color: #0044cc;  /* Background color of tooltip */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;       /* Larger font size */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transform: translateX(-50%) translateY(10px); /* Adjust position */
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #0044cc; /* Tooltip arrow color */
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -5px;
+    display:none;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::before, 
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Move up smoothly */
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .tooltip::before {
+        font-size: 1rem;  /* Reduce font size for mobile */
+        white-space: normal; /* Allow tooltip to wrap text */
+        max-width: 90vw;  /* Limit tooltip width to viewport width */
+    }
+}
