@@ -1,4 +1,4 @@
-# Communication is Vital and Vitality is Life
+# Verbal Pathways: Unlocking verbal expression in a safe, supportive environment.
 
 Welcome to the **Communication is Vital** project! This website aims to raise awareness and support for individuals with autistic language deficiencies and other communication challenges. Our mission is to provide a supportive, safe, and inclusive environment where everyone, regardless of their abilities, has the opportunity to thrive and communicate effectively.
 
