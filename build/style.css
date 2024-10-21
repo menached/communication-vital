@@ -913,3 +913,38 @@ h1:hover, h2:hover, h3:hover {
     padding: 0;
 }
 
+/* Remove hover effect, text decoration, and tooltip for Verbal Pathways title and star */
+header h1 .star-link,
+header h1 a {
+    text-decoration: none !important; /* Remove underline */
+    color: inherit; /* Keep text color the same */
+    pointer-events: none; /* Disable the hover effect */
+}
+
+header h1 .star-link:hover::before,
+header h1 a:hover::before {
+    content: ''; /* Remove any hover content */
+    visibility: hidden; /* Ensure tooltip is hidden */
+    transform: none; /* Prevent any transformations */
+}
+
+/* Remove tooltip */
+header h1 .tooltip::before,
+header h1 .tooltip::after {
+    display: none; /* Remove tooltip elements */
+}
+
+/* Remove hover color change for both */
+header h1 a:hover, header h1 .star-link:hover {
+    color: inherit !important; /* Disable hover color change */
+}
+/* Remove zoom effect on hover for header links */
+/*header h1 a {*/
+    /*transition: none; [> Disable any transition effects <]*/
+/*}*/
+
+/*header h1 a:hover {*/
+    /*transform: none; [> Prevent zoom effect <]*/
+    /*box-shadow: none; [> Remove any shadow if applied on hover <]*/
+/*}*/
+
