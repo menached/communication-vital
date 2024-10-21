@@ -159,15 +159,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*[> Responsive Adjustments <]*/
-/*@media (max-width: 600px) {*/
-    /*footer .footer-container {*/
-        /*flex-direction: column;*/
-    /*}*/
-    /*footer .footer-item {*/
-        /*margin: 10px auto;*/
-    /*}*/
-/*}*/
 
 
 
@@ -926,18 +917,67 @@ header h1 a:hover::before {
     content: ''; /* Remove any hover content */
     visibility: hidden; /* Ensure tooltip is hidden */
     transform: none; /* Prevent any transformations */
+    margin-bottom:0px;
+    padding-bottom:0px;
 }
 
 /* Remove tooltip */
 header h1 .tooltip::before,
 header h1 .tooltip::after {
     display: none; /* Remove tooltip elements */
+    margin-bottom:0px;
+    padding-bottom:0px;
 }
 
 /* Remove hover color change for both */
 header h1 a:hover, header h1 .star-link:hover {
     color: inherit !important; /* Disable hover color change */
+    margin-bottom:0px;
+    padding-bottom:0px;
 }
+
+.header-tagline {            
+    width:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+
+}
+
+/* Responsive Adjustments */
+@media (min-width: 601px) {
+.header-tagline {    
+    width:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+    font-size:1.3em;
+    }
+.header {
+    padding:10px;
+    }
+.header p {
+font-size:1.3em;
+}
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+.header-tagline {    
+    width:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+    font-size:.9em;
+    }
+.header {
+    padding:10px;
+    }
+.header p {
+font-size:.9em;
+}
+}
+
 /* Remove zoom effect on hover for header links */
 /*header h1 a {*/
     /*transition: none; [> Disable any transition effects <]*/
