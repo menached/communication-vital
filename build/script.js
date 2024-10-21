@@ -1,14 +1,30 @@
 // Content for the Mission, About, and Contact sections
 const contentData = {
     mission: `
+
+    <div class="title-share">
         <h2><i class="fas fa-rocket"></i> Our Mission</h2>
+        <div class="share-buttons">
+            <a href="#" onclick="shareOnFacebook()" class="share-button facebook">
+                <i class="fab fa-facebook-f"></i> Share on Facebook
+            </a>
+            <a href="#" onclick="shareOnTwitter()" class="share-button twitter">
+                <i class="fab fa-twitter"></i> Share on Twitter
+            </a>
+            <a href="#" onclick="shareOnLinkedIn()" class="share-button linkedin">
+                <i class="fab fa-linkedin-in"></i> Share on LinkedIn
+            </a>
+        </div>
+    </div>
+
+
         <p>Our mission is to foster a supportive community for individuals with autistic language deficiencies and other communication challenges. We believe in the power of connection and inclusivity, providing a safe space where everyone can thrive.</p>
         <h3>Core Principles</h3>
             <ul class="fancy-icons-list">
-                <li><i class="fas fa-hands-helping"></i> All people deserve to be understood and supported</li>
-                <li><i class="fas fa-heart"></i> Disability and challenges do not have to prevent a great life</li>
-                <li><i class="fas fa-feather-alt"></i> Everyone deserves a solid chance in life no matter what obstacles they face</li>
-                <li><i class="fas fa-shield-alt"></i> Safety is the first consideration, and all development follows from there</li>
+                <li><i class="fas fa-star" style="color: gold;"></i> All people deserve to be understood and supported</li>
+                <li><i class="fas fa-star" style="color: gold;"></i> Disability and challenges do not have to prevent a great life</li>
+                <li><i class="fas fa-star" style="color: gold;"></i> Everyone deserves a solid chance in life no matter what obstacles they face</li>
+                <li><i class="fas fa-star" style="color: gold;"></i> Safety is the first consideration, and all development follows from there</li>
             </ul>
         <h3><i class="fas fa-bullseye"></i> Our Aim</h3>
         <figure class="our-aim-image">
@@ -36,7 +52,23 @@ const contentData = {
         <p>We offer life skills training, from basic personal hygiene to advanced community participation. We emphasize mentorship through our “leg up” program, pairing advanced participants with beginners.</p>
     `,
     about: `
-        <h2><i class="aboutpage fa-solid fa-info-circle"></i> About Verbal Pathways</h2>
+
+        <div class="title-share">
+          <h2><i class="aboutpage fa-solid fa-user-circle"></i> About Verbal Pathways</h2>
+            <div class="share-buttons">
+                <a href="#" onclick="shareOnFacebook()" class="share-button facebook">
+                    <i class="fab fa-facebook-f"></i> Share on Facebook
+                </a>
+                <a href="#" onclick="shareOnTwitter()" class="share-button twitter">
+                    <i class="fab fa-twitter"></i> Share on Twitter
+                </a>
+                <a href="#" onclick="shareOnLinkedIn()" class="share-button linkedin">
+                    <i class="fab fa-linkedin-in"></i> Share on LinkedIn
+                </a>
+            </div>
+        </div>
+
+
         <p>We are dedicated to building a certified autism-friendly community that offers opportunities for non-verbal adults and individuals with communication challenges. Our aim is to create a welcoming environment that supports growth and development for all.</p>
         <h3><i class="aboutpage fa-solid fa-users"></i> The Who</h3>
         <p>We are a group of like-minded individuals passionate about making a difference:</p>
@@ -62,7 +94,22 @@ const contentData = {
         <p>Click the link above to learn about the skills we teach, including life skills, outings, and more.</p>
     `,
     contact: `
-        <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+
+        <div class="title-share">
+            <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+            <div class="share-buttons">
+                <a href="#" onclick="shareOnFacebook()" class="share-button facebook">
+                    <i class="fab fa-facebook-f"></i> Share on Facebook
+                </a>
+                <a href="#" onclick="shareOnTwitter()" class="share-button twitter">
+                    <i class="fab fa-twitter"></i> Share on Twitter
+                </a>
+                <a href="#" onclick="shareOnLinkedIn()" class="share-button linkedin">
+                    <i class="fab fa-linkedin-in"></i> Share on LinkedIn
+                </a>
+            </div>
+        </div>
+
         <p>We'd love to hear from you! Feel free to reach out to us with any questions or to learn more about our programs.</p>
         <p>Contact Jon Fleischer at <a href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
     <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/communication-vital/build/pexels-alexander-mass-748453803-28964106.jpg></p>
@@ -287,12 +334,28 @@ contentData.David = `
 
 
 contentData.whatWeTeach = `
-    <h2><i class="aboutpage fas fa-book-open"></i>What We Teach</h2>
-    <figure class="whatweteach">
-        <img src="communication-vital/public/Graduation.jpg" alt="Graduation Day" style="width: 90%; height: auto;">
-        <figcaption style="text-align: center;">Graduation Day!</figcaption>
-    </figure>
+    <div class="title-share">
+        <h2 style="display: flex; justify-content: space-between; align-items: center;">
+            <span><i class="aboutpage fas fa-book-open"></i> What We Teach</span>
+        </h2>
+        <div class="share-buttons">
+            <a href="#" onclick="shareOnFacebook()" class="share-button facebook">
+                <i class="fab fa-facebook-f"></i> Share on Facebook
+            </a>
+            <a href="#" onclick="shareOnTwitter()" class="share-button twitter">
+                <i class="fab fa-twitter"></i> Share on Twitter
+            </a>
+            <a href="#" onclick="shareOnLinkedIn()" class="share-button linkedin">
+                <i class="fab fa-linkedin-in"></i> Share on LinkedIn
+            </a>
+        </div>
+    </div>
+    <div class="meat">
     <h3>Basic Life Skills</h3>
+    <figure class="whatweteach">
+    <img src="communication-vital/public/Graduation.jpg" alt="Graduation Day" style="width: 90%; height: auto;">
+    <figcaption style="text-align: center;">Graduation Day!</figcaption>
+    </figure>
     <ul>
         <li>Personal hygiene</li>
         <li>Eating skills</li>
@@ -341,6 +404,7 @@ contentData.whatWeTeach = `
         <li>Private donors</li>
         <li>Corporate sponsors (e.g., JSX, Northrup Grumman)</li>
     </ul>
+    </div>
 `;
 
 
@@ -418,3 +482,22 @@ function submitForm(event) {
         alert('Please enter a valid email.');
     }
 }
+function shareOnFacebook() {
+    const url = window.location.href;
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(shareUrl, '_blank');
+}
+
+function shareOnTwitter() {
+    const url = window.location.href;
+    const text = 'Check out this incredibly worthwhile program for autistic adults!';
+    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+    window.open(shareUrl, '_blank');
+}
+
+function shareOnLinkedIn() {
+    const url = window.location.href;
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, '_blank');
+}
+
