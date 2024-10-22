@@ -43,7 +43,7 @@ const contentData = {
         <h3><i class="fas fa-chart-line"></i> Statistics</h3>
         <figure class="our-aim-image">
             <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats">
-            <figcaption style="text-align:center;">Statistics</figcaption>
+            <figcaption style="text-align:center;"><a href="stats.html">Statistics</a></figcaption>
         </figure>
     
 
@@ -86,16 +86,16 @@ const contentData = {
         <p>We are a group of like-minded individuals passionate about making a difference:</p>
         <ul class="custom-list">
             <li>
-                <strong><a href="#" onclick="showSection('Jon')">Jon Fleischer</a>:</strong> Founding member and bilingual financial services veteran.
+                <strong><a class="no-link-icon" href="#" onclick="showSection('Jon')">Jon Fleischer</a>:</strong> Founding member and bilingual financial services veteran.
             </li>
             <li>
-                <strong><a href="#" onclick="showSection('Larry')">Larry Banchero</a>:</strong> Entrepreneur and expert in multiple industries.
+                <strong><a class="no-link-icon" href="#" onclick="showSection('Larry')">Larry Banchero</a>:</strong> Entrepreneur and expert in multiple industries.
             </li>
             <li>
-                <strong><a href="#" onclick="showSection('Brian')">Brian Fleischer, Esq.</a>:</strong> Dual citizen of the U.S. and Mexico, a lawyer with decades of experience.
+                <strong><a class="no-link-icon" href="#" onclick="showSection('Brian')">Brian Fleischer, Esq.</a>:</strong> Dual citizen of the U.S. and Mexico, a lawyer with decades of experience.
             </li>
             <li>
-                <strong><a href="#" onclick="showSection('David')">David Menache</a>:</strong> Network engineer and tech entrepreneur, contributing his technical expertise.
+                <strong><a class="no-link-icon" href="#" onclick="showSection('David')">David Menache</a>:</strong> Network engineer and tech entrepreneur, contributing his technical expertise.
             </li>
         </ul>
         <h3><i class="aboutpage fas fa-question-circle"></i> <a href="#" onclick="showSection('theWhy')">The Why</a></h3> 
@@ -124,7 +124,7 @@ const contentData = {
 
         <p>We'd love to hear from you! Feel free to reach out to us with any questions or to learn more about our programs.</p>
         <p>Contact Jon Fleischer at <a href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
-    <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/communication-vital/public/pexels-alexander-mass-748453803-28964106.jpg></p>
+    <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/public/pexels-alexander-mass-748453803-28964106.jpg></p>
     `
 };
 
@@ -146,7 +146,7 @@ function getGravatarUrl(email, size = 80) {
 }
 
 
-// Function to load team content
+// Function to load team content with links to specific member sections
 function loadTeam() {
     const teamSection = document.getElementById('team');
     const placeholder = document.getElementById('team-placeholder');
@@ -156,10 +156,14 @@ function loadTeam() {
 
     // Add team content
     teamData.forEach(member => {
+        // Create function name dynamically based on the first name
+        const firstName = member.name.split(' ')[0]; // Get the first name
+        const sectionFunction = `show${firstName}Section`; // Dynamic function name
+
         const memberDiv = document.createElement('div');
         memberDiv.innerHTML = `
             <img src="${getGravatarUrl(member.email)}" alt="${member.name}" class="gravatar-icon">
-            <h3>${member.name}</h3>
+            <h3><a href="#" onclick="${sectionFunction}()">${member.name}</a></h3>
             <p>${member.role}</p>
             <p>${member.bio}</p>
         `;
@@ -169,6 +173,31 @@ function loadTeam() {
     // Add class to reveal the team section
     teamSection.classList.add('visible');
 }
+
+
+//// Function to load team content
+//function loadTeam() {
+    //const teamSection = document.getElementById('team');
+    //const placeholder = document.getElementById('team-placeholder');
+
+    //// Remove placeholder
+    //placeholder.style.display = 'none';
+
+    //// Add team content
+    //teamData.forEach(member => {
+        //const memberDiv = document.createElement('div');
+        //memberDiv.innerHTML = `
+            //<img src="${getGravatarUrl(member.email)}" alt="${member.name}" class="gravatar-icon">
+            //<h3>${member.name}</h3>
+            //<p>${member.role}</p>
+            //<p>${member.bio}</p>
+        //`;
+        //teamSection.appendChild(memberDiv);
+    //});
+
+    //// Add class to reveal the team section
+    //teamSection.classList.add('visible');
+//}
 
 
 // Function to reveal the team content when the user scrolls down
@@ -241,8 +270,73 @@ document.getElementById('subscribe-form').addEventListener('submit', submitForm)
 
 
 // Function to show the Mission section when the banner is clicked
+//function showMissionSection() {
+    //showSection('mission');
+//}
 function showMissionSection() {
+    // Display the mission section
     showSection('mission');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+}
+
+function showwhatWeTeachSection() {
+    // Display the mission section
+    showSection('whatWeTeach');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+}
+
+function showJonSection() {
+    // Display the mission section
+    showSection('Jon');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+}
+
+function showBrianSection() {
+    // Display the mission section
+    showSection('Brian');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+}
+
+function showLarrySection() {
+    // Display the mission section
+    showSection('Larry');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+}
+
+function showDavidSection() {
+    // Display the mission section
+    showSection('David');
+
+    // Scroll to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
 }
 
 // Function to display the correct section based on button click
@@ -283,11 +377,11 @@ contentData.williamsStory = `
 contentData.Jon = `
     <h2>Jon Fleischer - Founding Member</h2>
     <p>Jon Fleischer is a retired bilingual financial services veteran with a diverse background in various industries. He has experience in:</p>
-    <ul>
-        <li>Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
-        <li>Sales and marketing in the auto industry, textiles, and private equity</li>
-        <li>Farming and agriculture in Diriamba, Nicaragua</li>
-        <li>Construction and real estate in Aberdeen, Washington</li>
+    <ul class="custom-list2">
+        <li><i class="fas fa-star" style="color: gold;"></i>Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Sales and marketing in the auto industry, textiles, and private equity</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Farming and agriculture in Diriamba, Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Construction and real estate in Aberdeen, Washington</li>
     </ul>
     <p>Jon is also a TESOL certified teacher of English as a second language, helping students and professionals of all ages and diverse backgrounds. His entrepreneurial spirit and varied experiences have made him a dedicated advocate for individuals with communication challenges.</p>
     <figure style="max-width: 400px; margin: 20px auto; text-align: center;">
@@ -305,11 +399,11 @@ contentData.Jon = `
 contentData.Larry = `
     <h2>Larry Banchero - Founding Member</h2>
     <p>Larry Banchero is an impressive entrepreneur with a diverse background and a spirit of adventure. His extensive experience includes:</p>
-    <ul>
-        <li>Building and running a successful family business, Seattle Sorbet, which was eventually acquired by a large conglomerate</li>
-        <li>Master builder who has worked on ground-up projects and refurbishing dilapidated properties</li>
-        <li>Marketing expert with a proven track record in relationship-building and sales</li>
-        <li>Experience in the jewelry business in Osaka, Japan, and real estate development in Spain and Nicaragua</li>
+    <ul class="custom-list2">
+        <li><i class="fas fa-star" style="color: gold;"></i>Building and running a successful family business, Seattle Sorbet, which was eventually acquired by a large conglomerate</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Master builder who has worked on ground-up projects and refurbishing dilapidated properties</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Marketing expert with a proven track record in relationship-building and sales</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Experience in the jewelry business in Osaka, Japan, and real estate development in Spain and Nicaragua</li>
     </ul>
     <p>Larry has partnered with Jon in several entrepreneurial endeavors and has served as both a mentor and an important team player. His ability to thrive under pressure and his expertise in many areas have made him an invaluable part of the team.</p>
     <h3>Personal Life</h3>
@@ -320,10 +414,10 @@ contentData.Larry = `
 contentData.Brian = `
     <h2>Brian Fleischer, Esq. - Founding Member</h2>
     <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including:</p>
-    <ul>
-        <li>Undergraduate studies at the University of Arizona</li>
-        <li>Juris Doctor from a law school</li>
-        <li>Partner at Sassano and Fleischer law firm in the San Francisco Bay Area, Sacramento, and Los Angeles</li>
+    <ul class="custom-list2">
+        <li><i class="fas fa-star" style="color: gold;"></i>Undergraduate studies at the University of Arizona</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Juris Doctor from a law school</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Partner at Sassano and Fleischer law firm in the San Francisco Bay Area, Sacramento, and Los Angeles</li>
     </ul>
     <p>Brian has over 20 years of experience in law, handling cases with dedication, intelligence, and attention to detail. Outside of his legal work, Brian is an accomplished drummer who enjoys entertaining and playing music with a local quartet in the Bay Area.</p>
     <h3>Personal Life</h3>
@@ -333,11 +427,11 @@ contentData.Brian = `
 // Content for David Menache
 contentData.David = `
     <h2>David Menache - Founding Member</h2>
-    <p>David Menache began his academic journey at Santa Barbara City College before transferring to the University of California, Berkeley, where he pursued a degree in Legal Studies. After initially focusing on law, David transitioned into technology and has since become a full stack developer and certified AWS Solutions Architect. His professional background includes:</p>
-    <ul>
-        <li>Developing and managing applications across diverse industries</li>
-        <li>Extensive expertise in databases, networks, mass communications, and advertising</li>
-        <li>Leading a successful sales organization from his home in Nicaragua</li>
+    <p>David Menache began his studies at University of California, Berkeley, where he pursued a degree in Legal Studies and after initially focusing on law, David quickly transitioned into technology and has since become a full stack developer and certified AWS Solutions Architect. His professional background includes:</p>
+    <ul class="custom-list2">
+        <li><i class="fas fa-star" style="color: gold;"></i>Developing and managing applications across diverse industries</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Extensive expertise in databases, networks, mass communications, and advertising</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>Leading a successful sales organization from his home in Nicaragua</li>
     </ul>
     <p>David’s technical skills and leadership have made him a key contributor to the team’s mission of building a supportive community for individuals with communication challenges.</p>
     <h3>Personal Life</h3>
@@ -409,6 +503,9 @@ contentData.whatWeTeach = `
     </figure>
     <h3>Leg Up Program</h3>
     <p>We pair advanced participants with beginners to encourage growth under the watchful eye of trusted caregivers.</p>
+        <figure style="text-align: center;">
+            <img src="https://verballychallenged.inthingslimited.com/public/leg-up.webp" alt="Leg Up Program" style="width: 80%; max-width: 500px; border-radius: 10px;">
+        </figure>
     <h3>In-House Events</h3>
     <p>Our community hosts picnics, cookouts, and campfires to encourage social interaction and fun.</p>
     <figure style="text-align: center;">

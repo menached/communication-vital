@@ -1003,13 +1003,13 @@ font-size:1.3em;
     text-align:center;
     margin-top:0px;
     padding-top:0px;
-    font-size:.9em;
+    font-size:.7em;
     }
 .header {
     padding:10px;
     }
 .header p {
-font-size:.9em;
+font-size:.7em;
 }
 }
 
@@ -1040,5 +1040,25 @@ font-size:.9em;
 .our-aim-image {
     margin-left: 10px; /* Add slight space to the left if needed */
     float: right; /* Keep it floated to the right */
+}
+.custom-list2 {
+    list-style-type: none; /* Remove the default bullet points */
+    padding-left: 0; /* Adjust padding if necessary */
+}
+
+.custom-list2 li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.no-link-icon::after {
+    content: none; /* Disable the link icon */
+}
+
+
+h3:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: inherit; /* Ensure no color change */
+    padding: 0; /* Ensure no extra padding */
+    transition: none; /* Disable any transition */
 }
 
