@@ -123,7 +123,7 @@ const contentData = {
         </div>
 
         <p>We'd love to hear from you! Feel free to reach out to us with any questions or to learn more about our programs.</p>
-        <p>Contact Jon Fleischer at <a href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
+        <p>Contact Jon Fleischer at <a class="no-link-icon" href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a class="no-link-icon" href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
     <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/public/pexels-alexander-mass-748453803-28964106.jpg></p>
     `
 };
@@ -355,6 +355,7 @@ contentData.williamsStory = `
     </figure>
 
     <p>William often found himself in chaotic environments, where he was heavily medicated and sometimes left in the care of strangers.</p>
+    
 
     <figure class="story-image">
         <img src="https://verballychallenged.inthingslimited.com/public/favorite_ride_at_the_pier.jpg" alt="Favorite Ride at Pier">
@@ -375,7 +376,7 @@ contentData.williamsStory = `
 `;
 
 contentData.Jon = `
-    <h2>Jon Fleischer - Founding Member</h2>
+    <h2><img src="${getGravatarUrl('jon@inthingslimited.com')}" alt="Jon Fleischer" class="gravatar-icon"> Jon Fleischer</h2>
     <p>Jon Fleischer is a retired bilingual financial services veteran with a diverse background in various industries. He has experience in:</p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i>Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
@@ -397,7 +398,7 @@ contentData.Jon = `
 
 // Content for Larry Banchero
 contentData.Larry = `
-    <h2>Larry Banchero - Founding Member</h2>
+    <h2><img src="${getGravatarUrl('larry@inthingslimited.com')}" alt="Larry Banchero" class="gravatar-icon"> Larry Banchero</h2>
     <p>Larry Banchero is an impressive entrepreneur with a diverse background and a spirit of adventure. His extensive experience includes:</p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i>Building and running a successful family business, Seattle Sorbet, which was eventually acquired by a large conglomerate</li>
@@ -412,7 +413,7 @@ contentData.Larry = `
 
 // Content for Brian Fleischer
 contentData.Brian = `
-    <h2>Brian Fleischer, Esq. - Founding Member</h2>
+    <h2><img src="${getGravatarUrl('brian@inthingslimited.com')}" alt="Brian Fleischer, Esq." class="gravatar-icon"> Brian Fleischer</h2>
     <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including:</p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i>Undergraduate studies at the University of Arizona</li>
@@ -426,8 +427,8 @@ contentData.Brian = `
 
 // Content for David Menache
 contentData.David = `
-    <h2>David Menache - Founding Member</h2>
-    <p>David Menache began his studies at University of California, Berkeley, where he pursued a degree in Legal Studies and after initially focusing on law, David quickly transitioned into technology and has since become a full stack developer and certified AWS Solutions Architect. His professional background includes:</p>
+    <h2><img src="${getGravatarUrl('dave@inthingslimited.com')}" alt="David Menache" class="gravatar-icon"> David Menache </h2>
+    <p>David Menache began his studies at UC Berkeley, where he pursued a degree in Legal Studies. After initially focusing on law, David quickly transitioned into technology and has since become a full stack developer and certified AWS Solutions Architect. His professional background includes:</p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i>Developing and managing applications across diverse industries</li>
         <li><i class="fas fa-star" style="color: gold;"></i>Extensive expertise in databases, networks, mass communications, and advertising</li>
@@ -442,7 +443,7 @@ contentData.David = `
 contentData.whatWeTeach = `
     <div class="title-share">
         <h2 style="display: flex; justify-content: space-between; align-items: center;">
-            <span><i class="aboutpage fas fa-book-open"></i> What We Teach</span>
+            <span><i class="aboutpage fas fa-chalkboard-teacher"></i> What We Teach</span>
         </h2>
         <div class="share-buttons">
             <a href="#" onclick="shareOnFacebook()" class="share-button facebook">
@@ -458,8 +459,8 @@ contentData.whatWeTeach = `
     </div>
     <div class="meat">
     <h3>Basic Life Skills</h3>
-    <figure class="whatweteach">
-    <img src="public/Graduation.jpg" alt="Graduation Day" style="width: 90%; height: auto;">
+    <figure class="whatweteach" style="width:40%!important;">
+    <img src="public/Graduation.jpg" alt="Graduation Day" style="width: 100%; height: auto;">
     <figcaption style="text-align: center;">Graduation Day!</figcaption>
     </figure>
     <ul>
