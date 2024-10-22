@@ -28,21 +28,21 @@ const contentData = {
             </ul>
         <h3><i class="fas fa-bullseye"></i> Our Aim</h3>
         <figure class="our-aim-image">
-            <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/OurAim.png" alt="Our Aim Supportive Environment">
+            <img src="https://verballychallenged.inthingslimited.com/public/OurAim.png" alt="Our Aim Supportive Environment">
         </figure>
         <p>We aim to engage with, teach, and learn from a community of similarly language-challenged non-verbal adults and developmentally disabled individuals from all walks of life. Our strategy is to build a certified autism-friendly community where participants may live full time, part-time, or visit daily.</p>
     <!-- Clear the floats after the images -->
     <div style="clear: both;"></div>
         <h3><i class="fas fa-mountain"></i> Our Challenge</h3>
         <figure class="our-aim-image">
-            <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/frustrated-parent.png" alt="Our Aim Supportive Environment">
+            <img src="https://verballychallenged.inthingslimited.com/public/frustrated-parent.png" alt="Our Aim Supportive Environment">
         </figure>
         <p>Many parents face the overwhelming prospect that there is no place for their aging family members to reside and thrive once they can no longer provide for them. This issue is growing rapidly and creates enormous emotional strain for parents.</p>
     <!-- Clear the floats after the images -->
     <div style="clear: both;"></div>
         <h3><i class="fas fa-chart-line"></i> Statistics</h3>
         <figure class="our-aim-image">
-            <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/communication-vital/public/trending-up.png" alt="Stats">
+            <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats">
             <figcaption style="text-align:center;">Statistics</figcaption>
         </figure>
     
@@ -124,7 +124,7 @@ const contentData = {
 
         <p>We'd love to hear from you! Feel free to reach out to us with any questions or to learn more about our programs.</p>
         <p>Contact Jon Fleischer at <a href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
-    <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/communication-vital/build/pexels-alexander-mass-748453803-28964106.jpg></p>
+    <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/communication-vital/public/pexels-alexander-mass-748453803-28964106.jpg></p>
     `
 };
 
@@ -256,21 +256,21 @@ contentData.williamsStory = `
         <p>William’s journey through a difficult childhood led to his care being taken over by Jon, who became his legal conservator. Jon’s experiences caring for William have deeply shaped his commitment to this cause.</p>
 
     <figure class="story-image">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/enjoying_literature.jpg" alt="Enjoying Literature">
+        <img src="https://verballychallenged.inthingslimited.com/public/enjoying_literature.jpg" alt="Enjoying Literature">
         <figcaption>Enjoying Literature</figcaption>
     </figure>
 
     <p>William often found himself in chaotic environments, where he was heavily medicated and sometimes left in the care of strangers.</p>
 
     <figure class="story-image">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/favorite_ride_at_the_pier.jpg" alt="Favorite Ride at Pier">
+        <img src="https://verballychallenged.inthingslimited.com/public/favorite_ride_at_the_pier.jpg" alt="Favorite Ride at Pier">
         <figcaption>Favorite Ride at the Pier</figcaption>
     </figure>
 
     <p>Jon became his full-time caretaker. Since then, Jon has dedicated his life to providing a safe, stable environment for William.</p>
 
     <figure class="story-image">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/ready_for_dinner_bubba_gumps.jpg" alt="Ready for Dinner at Bubba Gumps">
+        <img src="https://verballychallenged.inthingslimited.com/public/ready_for_dinner_bubba_gumps.jpg" alt="Ready for Dinner at Bubba Gumps">
         <figcaption>Ready for Dinner at Bubba Gumps</figcaption>
     </figure>
 
@@ -291,7 +291,7 @@ contentData.Jon = `
     </ul>
     <p>Jon is also a TESOL certified teacher of English as a second language, helping students and professionals of all ages and diverse backgrounds. His entrepreneurial spirit and varied experiences have made him a dedicated advocate for individuals with communication challenges.</p>
     <figure style="max-width: 400px; margin: 20px auto; text-align: center;">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/blood_draw_at_doc.jpg" alt="Jon Fleischer at the doctor's office" style="width: 100%; height: auto; border-radius: 10px;">
+        <img src="https://verballychallenged.inthingslimited.com/public/blood_draw_at_doc.jpg" alt="Jon Fleischer at the doctor's office" style="width: 100%; height: auto; border-radius: 10px;">
         <figcaption style="font-style: italic; margin-top: 10px;">Jon with William at a routine doctor's appointment.</figcaption>
     </figure>
     <h3>Personal Life</h3>
@@ -365,7 +365,7 @@ contentData.whatWeTeach = `
     <div class="meat">
     <h3>Basic Life Skills</h3>
     <figure class="whatweteach">
-    <img src="communication-vital/public/Graduation.jpg" alt="Graduation Day" style="width: 90%; height: auto;">
+    <img src="public/Graduation.jpg" alt="Graduation Day" style="width: 90%; height: auto;">
     <figcaption style="text-align: center;">Graduation Day!</figcaption>
     </figure>
     <ul>
@@ -441,14 +441,14 @@ contentData.theWhy = `
     <p>Jon, like many parents, faces the overwhelming problem of figuring out who will provide for his special needs nephew once he becomes incapacitated by age or death. He has become disillusioned by the lack of quality care available in the Antelope Valley, where William was born and raised. This has motivated him to dedicate the rest of his working years to building a high-quality, enduring program that will continue to provide all the support necessary for William and many others long after he is gone.</p>
     
     <figure class="story-image">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/blood_draw_at_doc.jpg" alt="Blood Draw at Doctor's Office">
+        <img src="https://verballychallenged.inthingslimited.com/public/blood_draw_at_doc.jpg" alt="Blood Draw at Doctor's Office">
         <figcaption>Routine blood draw with William at the doctor's office</figcaption>
     </figure>
 
     <p>Jon is assembling a team of talented, dedicated professionals to undertake this awesome responsibility. His goal is to ensure that individuals with communication challenges and their families can access the care and support they need, even in the face of adversity.</p>
     
     <figure class="story-image">
-        <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/Graduation.jpg" alt="Graduation Day">
+        <img src="https://verballychallenged.inthingslimited.com/public/Graduation.jpg" alt="Graduation Day">
         <figcaption>Graduation Day!</figcaption>
     </figure>
 
