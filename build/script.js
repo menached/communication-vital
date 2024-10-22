@@ -33,21 +33,33 @@ const contentData = {
         <p>We aim to engage with, teach, and learn from a community of similarly language-challenged non-verbal adults and developmentally disabled individuals from all walks of life. Our strategy is to build a certified autism-friendly community where participants may live full time, part-time, or visit daily.</p>
     <!-- Clear the floats after the images -->
     <div style="clear: both;"></div>
-        <h3><i class="fas fa-exclamation-triangle"></i> Our Challenge</h3>
+        <h3><i class="fas fa-mountain"></i> Our Challenge</h3>
         <figure class="our-aim-image">
             <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/frustrated-parent.png" alt="Our Aim Supportive Environment">
         </figure>
         <p>Many parents face the overwhelming prospect that there is no place for their aging family members to reside and thrive once they can no longer provide for them. This issue is growing rapidly and creates enormous emotional strain for parents.</p>
     <!-- Clear the floats after the images -->
     <div style="clear: both;"></div>
-        <h3><i class="fas fa-chart-bar"></i> Stats</h3>
+        <h3><i class="fas fa-chart-line"></i> Statistics</h3>
         <figure class="our-aim-image">
-            <img src="https://verballychallenged.inthingslimited.com/communication-vital/public/trending-up.png" alt="Our Aim Supportive Environment">
+            <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/communication-vital/public/trending-up.png" alt="Stats">
+            <figcaption style="text-align:center;">Statistics</figcaption>
         </figure>
+    
+
+    <!-- Tooltip container -->
+        <div id="tooltip-container" class="tooltip-hidden"></div>
+
         <p>Autism is one of the fastest-growing disabilities. Non-verbal and minimally verbal individuals make up 25-30% of the autistic population.</p>
         <p>Today’s graduating classes report X number of non-verbal students per class.</p>
+        <!-- Clear the floats after the images -->
+        <div style="clear: both;"></div>
         <h3><i class="fas fa-users"></i> Our Community</h3>
         <p>The hub includes sensory centers, tiny home living spaces, a store, a restaurant, a farm, and medical and security facilities.</p>
+        <figure style="text-align: center;">
+            <img src="https://verballychallenged.inthingslimited.com/public/tiny_homes.jpg" alt="Picnic Outing" style="width: 80%; max-width: 500px; border-radius: 10px;">
+        </figure>
+
         <h3><i class="fas fa-chalkboard-teacher"></i><a href="#" onclick="showSection('whatWeTeach')"> What We Teach</a></h3> <!-- Clickable link for What we teach -->
         <p>We offer life skills training, from basic personal hygiene to advanced community participation. We emphasize mentorship through our “leg up” program, pairing advanced participants with beginners.</p>
     `,
@@ -88,9 +100,9 @@ const contentData = {
         </ul>
         <h3><i class="aboutpage fas fa-question-circle"></i> <a href="#" onclick="showSection('theWhy')">The Why</a></h3> 
         <p>Jon, like many parents, is concerned about providing for his special needs nephew once he’s unable. This program was created to ensure continued care and support for William and others like him.</p>
-        <h3><i class="aboutpage fas fa-chalkboard-teacher"></i> <a href="#" onclick="showSection('williamsStory')">William's Story</a></h3> 
+        <h3><i class="aboutpage fas fa-file"></i> <a href="#" onclick="showSection('williamsStory')">William's Story</a></h3> 
         <p>William’s journey through a difficult childhood led to his care being taken over by Jon, who became his legal conservator. Jon’s experiences caring for William have deeply shaped his commitment to this cause.</p>
-        <h3><i class="fas fa-book-open"></i> <a href="#" onclick="showSection('whatWeTeach')">What we Teach</a></h3> 
+        <h3><i class="fas fa-chalkboard-teacher"></i> <a href="#" onclick="showSection('whatWeTeach')">What we Teach</a></h3> 
         <p>Click the link above to learn about the skills we teach, including life skills, outings, and more.</p>
     `,
     contact: `
@@ -240,7 +252,7 @@ function showSection(section) {
 }
 
 contentData.williamsStory = `
-    <h2><i class="aboutpage fas fa-chalkboard-teacher"></i> Our Inspiration</h2>
+    <h2><i class="aboutpage fas fa-file"></i> Our Inspiration</h2>
         <p>William’s journey through a difficult childhood led to his care being taken over by Jon, who became his legal conservator. Jon’s experiences caring for William have deeply shaped his commitment to this cause.</p>
 
     <figure class="story-image">
@@ -392,10 +404,16 @@ contentData.whatWeTeach = `
     </ul>
     <h3>Outings</h3>
     <p>We provide enrichment excursions and field trips to interesting and educational destinations reachable within 2 hours of the community.</p>
+    <figure style="text-align: center;">
+        <img src="https://verballychallenged.inthingslimited.com/public/tiny_homes.jpg" alt="Picnic Outing" style="width: 80%; max-width: 500px; border-radius: 10px;">
+    </figure>
     <h3>Leg Up Program</h3>
     <p>We pair advanced participants with beginners to encourage growth under the watchful eye of trusted caregivers.</p>
     <h3>In-House Events</h3>
     <p>Our community hosts picnics, cookouts, and campfires to encourage social interaction and fun.</p>
+    <figure style="text-align: center;">
+        <img src="https://verballychallenged.inthingslimited.com/public/picnic.jpg" alt="Picnic Outing" style="width: 80%; max-width: 500px; border-radius: 10px;">
+    </figure>
     <h3>Financial Assistance</h3>
     <ul>
         <li>In-house help with acquiring Regional Center Funding</li>
@@ -500,4 +518,48 @@ function shareOnLinkedIn() {
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
     window.open(shareUrl, '_blank');
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const statsImage = document.getElementById('hover-stats-image');
+
+    if (!statsImage) {
+        console.error("Stats image not found in the DOM.");
+        return;
+    }
+
+    // Function to load chart.html into the tooltip
+    function loadTooltipContent() {
+        fetch('https://verballychallenged.inthingslimited.com/chart.html')
+            .then(response => response.text())
+            .then(data => {
+                const tooltip = document.getElementById('tooltip-container');
+                tooltip.innerHTML = data; // Insert fetched content into the tooltip
+            })
+            .catch(error => {
+                console.error('Error loading tooltip content:', error);
+            });
+    }
+
+    // Function to show the tooltip at the cursor position
+    function showTooltip(event) {
+        const tooltip = document.getElementById('tooltip-container');
+        tooltip.style.left = (event.pageX + 10) + 'px'; // Position 10px to the right of the cursor
+        tooltip.style.top = (event.pageY + 10) + 'px';  // Position 10px below the cursor
+        tooltip.classList.add('tooltip-visible');
+        tooltip.classList.remove('tooltip-hidden');
+    }
+
+    // Function to hide the tooltip
+    function hideTooltip() {
+        const tooltip = document.getElementById('tooltip-container');
+        tooltip.classList.add('tooltip-hidden');
+        tooltip.classList.remove('tooltip-visible');
+    }
+
+    // Attach event listeners to the stats image
+    statsImage.addEventListener('mouseenter', loadTooltipContent);
+    statsImage.addEventListener('mousemove', showTooltip);
+    statsImage.addEventListener('mouseleave', hideTooltip);
+});
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autism and Mental Health Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .bar {
+      fill: steelblue;
+    }
+    .bar:hover {
+      fill: orange;
+    }
+    .axis-label {
+      font-size: 12px;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 5px;
+      border-radius: 3px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Autism and Mental Health in Adults</h1>
+  <p>Comparing mental health conditions between autistic adults and the general population.</p>
+  
+  <div id="chart"></div>
+  <div class="tooltip" style="display: none;"></div>
+
+  <script>
+    // Dataset
+    const dataset = [
+      { condition: "Anxiety Disorders", autistic_adults: 45, general_population: 19 },
+      { condition: "Depression", autistic_adults: 35, general_population: 8 },
+      { condition: "Bipolar Disorder", autistic_adults: 9, general_population: 2 },
+      { condition: "Obsessive-Compulsive Disorder", autistic_adults: 22, general_population: 2 },
+      { condition: "Schizophrenia", autistic_adults: 5, general_population: 1 },
+      { condition: "Suicidal Ideation", autistic_adults: 25, general_population: 6 },
+      { condition: "Sleep Disorders", autistic_adults: 55, general_population: 32 },
+      { condition: "Substance Use Disorders", autistic_adults: 3, general_population: 9 }
+    ];
+
+    // Chart dimensions
+    const margin = { top: 40, right: 20, bottom: 60, left: 70 };
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+
+    // Create SVG element
+    const svg = d3.select("#chart")
+                  .append("svg")
+                  .attr("width", width + margin.left + margin.right)
+                  .attr("height", height + margin.top + margin.bottom)
+                  .append("g")
+                  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+    // Create scales
+    const xScale = d3.scaleBand()
+                     .domain(dataset.map(d => d.condition))
+                     .range([0, width])
+                     .padding(0.2);
+
+    const yScale = d3.scaleLinear()
+                     .domain([0, d3.max(dataset, d => Math.max(d.autistic_adults, d.general_population))])
+                     .range([height, 0]);
+
+    // X Axis
+    svg.append("g")
+       .attr("transform", `translate(0, ${height})`)
+       .call(d3.axisBottom(xScale))
+       .selectAll("text")
+       .attr("transform", "rotate(-40)")
+       .style("text-anchor", "end");
+
+    // Y Axis
+    svg.append("g")
+       .call(d3.axisLeft(yScale));
+
+    // Bars for Autistic Adults
+    svg.selectAll(".bar-autistic")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("class", "bar")
+       .attr("x", d => xScale(d.condition))
+       .attr("width", xScale.bandwidth() / 2)
+       .attr("y", d => yScale(d.autistic_adults))
+       .attr("height", d => height - yScale(d.autistic_adults))
+       .attr("fill", "steelblue")
+       .on("mouseover", (event, d) => showTooltip(event, d, 'Autistic Adults'))
+       .on("mouseout", hideTooltip);
+
+    // Bars for General Population
+    svg.selectAll(".bar-general")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("class", "bar")
+       .attr("x", d => xScale(d.condition) + xScale.bandwidth() / 2)
+       .attr("width", xScale.bandwidth() / 2)
+       .attr("y", d => yScale(d.general_population))
+       .attr("height", d => height - yScale(d.general_population))
+       .attr("fill", "orange")
+       .on("mouseover", (event, d) => showTooltip(event, d, 'General Population'))
+       .on("mouseout", hideTooltip);
+
+    // Tooltip
+    const tooltip = d3.select(".tooltip");
+
+    function showTooltip(event, d, group) {
+      tooltip.style("display", "block")
+             .style("left", event.pageX + "px")
+             .style("top", event.pageY + "px")
+             .html(`<strong>${group}</strong><br>${d.condition}: ${group === 'Autistic Adults' ? d.autistic_adults : d.general_population}%`);
+    }
+
+    function hideTooltip() {
+      tooltip.style("display", "none");
+    }
+  </script>
+</body>
+</html>
+
