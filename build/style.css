@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.alignleft { 
+    text-align: left;
+}
+
 /* Apply Marvel font to all headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Marvel', sans-serif;
@@ -1061,4 +1065,6 @@ h3:hover {
     padding: 0; /* Ensure no extra padding */
     transition: none; /* Disable any transition */
 }
+
+
 

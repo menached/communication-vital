@@ -42,8 +42,12 @@ const contentData = {
     <div style="clear: both;"></div>
         <h3><i class="fas fa-chart-line"></i> Statistics</h3>
         <figure class="our-aim-image">
-            <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats">
-            <figcaption style="text-align:center;"><a href="stats.html">Statistics</a></figcaption>
+            <a class="no-link-icon" href="pa.html">
+                <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats">
+            </a>
+            <figcaption style="text-align:center;position:relative;left:-10px;">
+    <a class="no-link-icon" href="pa.html">Stats</a>
+    </figcaption>
         </figure>
     
 

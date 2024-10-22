@@ -33,6 +33,9 @@
 
     <link rel="icon" href="https://verballychallenged.inthingslimited.com/favicon.ico">
     <link rel="stylesheet" href="https://verballychallenged.inthingslimited.com/communication-vital/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
 
     <title>Profound Autism - Verbal Pathways</title>
@@ -50,16 +53,42 @@
                 padding: 10px; /* Smaller padding for mobile devices */
             }
         }
+
+        /* Larger graph view for bigger screens*/
+            @media (min-width: 601px) {
+                width: 100%; 
+                .profound-chart {
+                height: 600px; 
+                border: none; 
+                transform: scale(0.7); 
+                transform-origin: 0 0; 
+                overflow:hidden; 
+            }
+        }
+
+        /* Smaller graph view for portrait mobile */
+            @media (max-width: 600px) and (orientation: portrait) {
+                width: 100%; 
+                .profound-chart {
+                height: 600px; 
+                border: none; 
+                transform: scale(0.3); 
+                transform-origin: 0 0; 
+                overflow:hidden; 
+            }
+        }
+
+
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>
-            <a href="http://verballychallenged.inthingslimited.com/" class="star-link no-link-icon">⭐</a> 
-            <a href="http://verballychallenged.inthingslimited.com" class="star-link no-link-icon">Verbal Pathways</a>
-        </h1>
-        <p class="header-tagline">Unlocking verbal expression in a safe, supportive environment.</p>
+            <h1>
+                <a href="/" class="star-link no-link-icon">⭐</a> 
+                <a href="/" style="position:relative;left:-15px;" class="star-link no-link-icon">Verbal Pathways</a>
+            </h1>
+            <p style="width:100%;text-align:center;" class="header-tagline">Unlocking verbal expression in a safe, supportive environment.</p>
     </header>
 
     <!-- Main content section -->
@@ -78,8 +107,7 @@
             <!-- Embedded stats.html page in an iframe -->
             <h3>Related Statistics</h3>
             <div style="text-align: center;">
-                <iframe src="https://verballychallenged.inthingslimited.com/stats.html" 
-                        style="width: 50%; height: 400px; border: none; transform: scale(0.5); transform-origin: 0 0;">
+                <iframe style="width: 100%; height: 600px; border: none; transform: scale(0.5); transform-origin: 0 0; overflow:hidden;" class="profound-chart" src="https://verballychallenged.inthingslimited.com/stats.html" scrolling="no" frameborder="none">
                 </iframe>
             </div>
 
