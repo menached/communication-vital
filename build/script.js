@@ -123,7 +123,7 @@ const contentData = {
         </div>
 
         <p>We'd love to hear from you! Feel free to reach out to us with any questions or to learn more about our programs.</p>
-        <p>Contact Jon Fleischer at <a class="no-link-icon" href='mailto:jon@inthingslimited.com'>jon@inthingslimited.com</a> or call <a class="no-link-icon" href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
+        <p>Contact Verbal Pathways at <a class="no-link-icon" href='mailto:williams-team@inthingslimited.com'>williams-team@inthingslimited.com</a> or call <a class="no-link-icon" href='tel:+16617433143'>‪(661) 743-3143‬</a>.</p>
     <p><img class="contactuspic" src=https://verballychallenged.inthingslimited.com/public/pexels-alexander-mass-748453803-28964106.jpg></p>
     `
 };
@@ -134,7 +134,7 @@ const contentData = {
 const teamData = [
     { name: "Jon Fleischer", role: "Founder", email: "jon@inthingslimited.com", bio: "Passionate about making a difference..." },
     { name: "Larry Banchero", role: "Co-founder", email: "larry@inthingslimited.com", bio: "Entrepreneur and builder with a vast array of experience..." },
-    { name: "Brian Fleischer", role: "Legal Advisor", email: "brian@inthingslimited.com", bio: "Experienced lawyer contributing to legal aspects of the project..." },
+    { name: "Brian Fleischer", role: "Legal Advisor", email: "brianf@inthingslimited.com", bio: "Experienced lawyer contributing to legal aspects of the project..." },
     { name: "David Menache", role: "IT", email: "dave@inthingslimited.com", bio: "Assisting with website and communications..." }
 ];
 
@@ -379,10 +379,10 @@ contentData.Jon = `
     <h2><img src="${getGravatarUrl('jon@inthingslimited.com')}" alt="Jon Fleischer" class="gravatar-icon"> Jon Fleischer</h2>
     <p>Jon Fleischer is a retired bilingual financial services veteran with a diverse background in various industries. He has experience in:</p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i>Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Sales and marketing in the auto industry, textiles, and private equity</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Farming and agriculture in Diriamba, Nicaragua</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Construction and real estate in Aberdeen, Washington</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Sales and marketing in the auto industry, textiles, and private equity</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Farming and agriculture in Diriamba, Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Construction and real estate in Aberdeen, Washington</li>
     </ul>
     <p>Jon is also a TESOL certified teacher of English as a second language, helping students and professionals of all ages and diverse backgrounds. His entrepreneurial spirit and varied experiences have made him a dedicated advocate for individuals with communication challenges.</p>
     <figure style="max-width: 400px; margin: 20px auto; text-align: center;">
@@ -401,10 +401,10 @@ contentData.Larry = `
     <h2><img src="${getGravatarUrl('larry@inthingslimited.com')}" alt="Larry Banchero" class="gravatar-icon"> Larry Banchero</h2>
     <p>Larry Banchero is an impressive entrepreneur with a diverse background and a spirit of adventure. His extensive experience includes:</p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i>Building and running a successful family business, Seattle Sorbet, which was eventually acquired by a large conglomerate</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Master builder who has worked on ground-up projects and refurbishing dilapidated properties</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Marketing expert with a proven track record in relationship-building and sales</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Experience in the jewelry business in Osaka, Japan, and real estate development in Spain and Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Building and running a successful family business, Seattle Sorbet, which was eventually acquired by a large conglomerate</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Master builder who has worked on ground-up projects and refurbishing dilapidated properties</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Marketing expert with a proven track record in relationship-building and sales</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Experience in the jewelry business in Osaka, Japan, and real estate development in Spain and Nicaragua</li>
     </ul>
     <p>Larry has partnered with Jon in several entrepreneurial endeavors and has served as both a mentor and an important team player. His ability to thrive under pressure and his expertise in many areas have made him an invaluable part of the team.</p>
     <h3>Personal Life</h3>
@@ -413,12 +413,12 @@ contentData.Larry = `
 
 // Content for Brian Fleischer
 contentData.Brian = `
-    <h2><img src="${getGravatarUrl('brian@inthingslimited.com')}" alt="Brian Fleischer, Esq." class="gravatar-icon"> Brian Fleischer</h2>
+    <h2><img src="${getGravatarUrl('brianf@inthingslimited.com')}" alt="Brian Fleischer, Esq." class="gravatar-icon"> Brian Fleischer</h2>
     <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including:</p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i>Undergraduate studies at the University of Arizona</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Juris Doctor from a law school</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Partner at Sassano and Fleischer law firm in the San Francisco Bay Area, Sacramento, and Los Angeles</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Undergraduate studies at the University of Arizona</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor from a law school</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Partner at Sassano and Fleischer law firm in the San Francisco Bay Area, Sacramento, and Los Angeles</li>
     </ul>
     <p>Brian has over 20 years of experience in law, handling cases with dedication, intelligence, and attention to detail. Outside of his legal work, Brian is an accomplished drummer who enjoys entertaining and playing music with a local quartet in the Bay Area.</p>
     <h3>Personal Life</h3>
@@ -430,9 +430,9 @@ contentData.David = `
     <h2><img src="${getGravatarUrl('dave@inthingslimited.com')}" alt="David Menache" class="gravatar-icon"> David Menache </h2>
     <p>David Menache began his studies at UC Berkeley, where he pursued a degree in Legal Studies. After initially focusing on law, David quickly transitioned into technology and has since become a full stack developer and certified AWS Solutions Architect. His professional background includes:</p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i>Developing and managing applications across diverse industries</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Extensive expertise in databases, networks, mass communications, and advertising</li>
-        <li><i class="fas fa-star" style="color: gold;"></i>Leading a successful sales organization from his home in Nicaragua</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Developing and managing applications across diverse industries</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Extensive expertise in databases, networks, mass communications, and advertising</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Leading a successful sales organization from his home in Nicaragua</li>
     </ul>
     <p>David’s technical skills and leadership have made him a key contributor to the team’s mission of building a supportive community for individuals with communication challenges.</p>
     <h3>Personal Life</h3>
