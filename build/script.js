@@ -420,7 +420,7 @@ contentData.Brian = `
     <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including: </p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i> Bachelor of Arts Economics - 1990 </li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor and member of California Bar -1995 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor and admittance to California Bar -1995 </li>
         <li><i class="fas fa-star" style="color: gold;"></i> Associate Lawyer at Sassano Law Firm 1996-97 </li>
         <li><i class="fas fa-star" style="color: gold;"></i> Partner Sassano and Fleischer  2002 </li>
     </ul>
