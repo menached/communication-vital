@@ -26,6 +26,11 @@ header {
     text-align: center;
 }
 
+header:hover {
+    background-color: #0044cc; /* Only change color or background, no dimension changes */
+    /* Avoid changing padding, margin, or border on hover */
+}
+
 #tabs {
     text-align: center;
     margin-top: 20px;
@@ -1066,5 +1071,35 @@ h3:hover {
     transition: none; /* Disable any transition */
 }
 
+/* Responsive Adjustments */
+@media (min-width: 601px) {
+    .stats-image {
+        position:relative;
+        left:-30px;
+        text-align: center;
+    }
+}
 
+@media (max-width: 600px) {
+    .fig-caption {
+        text-align: center; 
+        margin-top: 0px;
+        position:relative;
+        left:-17px;
+    }
+}
+
+.whatwedolist {
+    list-style: none; /* Removes the default bullet points */
+    padding-left: 0;  /* Ensures proper alignment */
+}
+
+.whatwedolist li {
+    display: flex; /* Ensures the icon and text are on the same line */
+    align-items: center; /* Vertically centers the text with the icon */
+}
+
+.whatwedolist li i {
+    margin-right: 10px; /* Adds some space between the star and the text */
+}
 
