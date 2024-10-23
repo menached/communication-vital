@@ -41,21 +41,19 @@ const contentData = {
     <!-- Clear the floats after the images -->
     <div style="clear: both;"></div>
         <h3><i class="fas fa-chart-line"></i> Statistics</h3>
-        <figure class="our-aim-image">
+        <figure class="our-aim-image stats-image">
             <a class="no-link-icon" href="pa.html">
-                <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats">
+                <img id="hover-stats-image" src="https://verballychallenged.inthingslimited.com/public/trending-up.png" alt="Stats" style="display: inline-block;">
             </a>
-            <figcaption style="text-align:center;position:relative;left:-10px;">
-    <a class="no-link-icon" href="pa.html">Stats</a>
-    </figcaption>
-        </figure>
-    
+            <figcaption class="fig-caption">
+                <a class="statslink" href="pa.html">Stats</a>
+            </figcaption>
+        </figure>    
 
     <!-- Tooltip container -->
         <div id="tooltip-container" class="tooltip-hidden"></div>
 
         <p>Autism is one of the fastest-growing disabilities. Non-verbal and minimally verbal individuals make up 25-30% of the autistic population.</p>
-        <p>Today’s graduating classes report X number of non-verbal students per class.</p>
         <!-- Clear the floats after the images -->
         <div style="clear: both;"></div>
         <h3><i class="fas fa-users"></i> Our Community</h3>
