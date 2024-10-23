@@ -1,7 +1,7 @@
 // Content for the Mission, About, and Contact sections
 const contentData = {
     mission: `
-
+    <section id="mission">
     <div class="title-share">
         <h2><i class="fas fa-rocket"></i> Our Mission</h2>
         <div class="share-buttons">
@@ -66,6 +66,7 @@ const contentData = {
 
         <h3><i class="fas fa-chalkboard-teacher"></i><a href="#" onclick="showSection('whatWeTeach')"> What We Teach</a></h3> <!-- Clickable link for What we teach -->
         <p>We offer life skills training, from basic personal hygiene to advanced community participation. We emphasize mentorship through our “leg up” program, pairing advanced participants with beginners.</p>
+        </section>
     `,
     about: `
 
@@ -664,4 +665,34 @@ document.addEventListener('DOMContentLoaded', function() {
     statsImage.addEventListener('mousemove', showTooltip);
     statsImage.addEventListener('mouseleave', hideTooltip);
 });
+
+
+// Function to load a section based on hash or button click
+function loadSectionFromHash() {
+    const hash = window.location.hash.substring(1); // Get the hash from URL (without '#')
+    
+    // Load the corresponding section
+    if (hash && contentData[hash]) {
+        showSection(hash);
+        window.scrollTo({
+            top: 0,  // Scroll to the top
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Add an event listener to run the function on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadSectionFromHash();  // Load the section based on the current URL hash
+});
+
+// Update the function that shows sections when clicked
+function showSection(section) {
+    const contentContainer = document.getElementById('content');
+    contentContainer.innerHTML = contentData[section] || '<p>Section not found</p>';
+    history.pushState(null, null, `#${section}`);  // Update the URL with the section hash
+}
+
+// Optionally, listen for hash changes and dynamically load sections if the URL changes
+window.addEventListener('hashchange', loadSectionFromHash);
 
