@@ -1088,3 +1088,18 @@ h3:hover {
         left:-17px;
     }
 }
+
+.whatwedolist {
+    list-style: none; /* Removes the default bullet points */
+    padding-left: 0;  /* Ensures proper alignment */
+}
+
+.whatwedolist li {
+    display: flex; /* Ensures the icon and text are on the same line */
+    align-items: center; /* Vertically centers the text with the icon */
+}
+
+.whatwedolist li i {
+    margin-right: 10px; /* Adds some space between the star and the text */
+}
+

@@ -380,12 +380,12 @@ contentData.williamsStory = `
 
 contentData.Jon = `
     <h2><img src="${getGravatarUrl('jon@inthingslimited.com')}" alt="Jon Fleischer" class="gravatar-icon"> Jon Fleischer</h2>
-    <p>Jon Fleischer is a retired bilingual financial services veteran with a diverse background in various industries. He has experience in:</p>
+    <p>Jon Fleischer, Entrepreneur, is a retired bilingual  international financial services veteran with a diverse background in various industries. He founded an international money transfer company and ran it from 2003-2013. His experience includes: </p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i> Financial services in California, Washington, Oregon, Mexico, and Nicaragua</li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Sales and marketing in the auto industry, textiles, and private equity</li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Farming and agriculture in Diriamba, Nicaragua</li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Construction and real estate in Aberdeen, Washington</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> International Remittance and Foreign Exchange with an emphasis on Latin America </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Sales and Marketing - Private Equity, Textiles</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Farming Production and Agricultural Sales </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Construction and Real Estate </li>
     </ul>
     <p>Jon is also a TESOL certified teacher of English as a second language, helping students and professionals of all ages and diverse backgrounds. His entrepreneurial spirit and varied experiences have made him a dedicated advocate for individuals with communication challenges.</p>
     <figure style="max-width: 400px; margin: 20px auto; text-align: center;">
@@ -417,13 +417,14 @@ contentData.Larry = `
 // Content for Brian Fleischer
 contentData.Brian = `
     <h2><img src="${getGravatarUrl('brianf@inthingslimited.com')}" alt="Brian Fleischer, Esq." class="gravatar-icon"> Brian Fleischer</h2>
-    <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including:</p>
+    <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including: </p>
     <ul class="custom-list2">
-        <li><i class="fas fa-star" style="color: gold;"></i> Undergraduate studies at the University of Arizona</li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor from a law school</li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Partner at Sassano and Fleischer law firm in the San Francisco Bay Area, Sacramento, and Los Angeles</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Bachelor of Arts Economics - 1990 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor and member of California Bar -1995 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Associate Lawyer at Sassano Law Firm 1996-97 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Partner Sassano and Fleischer  2002 </li>
     </ul>
-    <p>Brian has over 20 years of experience in law, handling cases with dedication, intelligence, and attention to detail. Outside of his legal work, Brian is an accomplished drummer who enjoys entertaining and playing music with a local quartet in the Bay Area.</p>
+    <p>Brian has  20 years of experience in law, handling cases with dedication, intelligence, and attention to detail. Outside of his legal work, Brian is an accomplished drummer who enjoys entertaining and playing music with a local quartet in the Bay Area. </p>
     <h3>Personal Life</h3>
     <p>Brian is also an avid scuba diver and prolific underwater photographer, capturing beautiful marine images during his travels. His love for learning about diverse cultures has taken him to many parts of the world.</p>
 `;
@@ -466,39 +467,39 @@ contentData.whatWeTeach = `
     <img src="public/Graduation.jpg" alt="Graduation Day" style="width: 100%; height: auto;">
     <figcaption style="text-align: center;">Graduation Day!</figcaption>
     </figure>
-    <ul>
-        <li>Personal hygiene</li>
-        <li>Eating skills</li>
-        <li>Bathroom skills</li>
+    <ul class="whatwedolist">
+        <li><i class="fas fa-star" style="color: gold;"></i> Personal hygiene</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Eating skills</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Bathroom skills</li>
     </ul>
     <h3>Intermediate Life Skills</h3>
-    <ul>
-        <li>Care of personal belongings</li>
-        <li>Washing, folding, and storing clothes</li>
-        <li>Cooking</li>
-        <li>Arts and crafts</li>
+    <ul class="whatwedolist">
+        <li><i class="fas fa-star" style="color: gold;"></i> Care of personal belongings</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Washing, folding, and storing clothes</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Cooking</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Arts and crafts</li>
     </ul>
     <h3>Advanced Life Skills</h3>
-    <ul>
-        <li>Eating in restaurants</li>
-        <li>Handling money</li>
-        <li>Using mass transit</li>
-        <li>Community safety</li>
-        <li>Socializing, making friends, and building relationships</li>
+    <ul class="whatwedolist">
+        <li><i class="fas fa-star" style="color: gold;"></i> Eating in restaurants</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Handling money</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Using mass transit</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Community safety</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Socializing, making friends, and building relationships</li>
     </ul>
     <h3>Advanced Plus</h3>
-    <ul>
-        <li>Air travel</li>
-        <li>Boating</li>
-        <li>Becoming a “leg up” mentor</li>
+    <ul class="whatwedolist">
+        <li><i class="fas fa-star" style="color: gold;"></i> Air travel</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Boating</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Becoming a “leg up” mentor</li>
     </ul>
     <h3>Physical Education</h3>
-    <ul>
-        <li>Soccer field</li>
-        <li>Basketball court</li>
-        <li>Walking/running track</li>
-        <li>Swimming pool</li>
-        <li>Park</li>
+    <ul class="whatwedolist">
+        <li><i class="fas fa-star" style="color: gold;"></i> Soccer field</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Basketball court</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Walking/running track</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Swimming pool</li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Park</li>
     </ul>
     <h3>Outings</h3>
     <p>We provide enrichment excursions and field trips to interesting and educational destinations reachable within 2 hours of the community.</p>
@@ -518,7 +519,7 @@ contentData.whatWeTeach = `
     <h3>Financial Assistance</h3>
     <ul>
         <li>In-house help with acquiring Regional Center Funding</li>
-        <li>Independent Facilitators through the Self-Determination Program</li>
+        <li>Facilitators through the Self-Determination Program</li>
         <li>Government grants</li>
         <li>Private donors</li>
         <li>Corporate sponsors (e.g., JSX, Northrup Grumman)</li>
