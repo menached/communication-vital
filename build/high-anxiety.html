@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZXF57K15R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JZXF57K15R');
+    </script>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anxiety plays a significant role in the lives of many of these participants so we  must adjust accordingly.">
+    <meta name="author" content="Verbal Pathways">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="High Anxiety - How we Coach & Inspire">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://verballychallenged.inthingslimited.com/profound-autism.html">
+    <meta property="og:image" content="https://verballychallenged.inthingslimited.com/public/teach.png">
+    <meta property="og:description" content="Anxiety plays a significant role in the lives of many of these participants so we  must adjust accordingly.">
+    <meta property="og:site_name" content="Verbal Pathways">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="High Anxiety - How we Coach & Inspire">
+    <meta name="twitter:description" content="Anxiety plays a significant role in the lives of many of these participants so we  must adjust accordingly.">
+    <meta name="twitter:image" content="https://verballychallenged.inthingslimited.com/public/teach.png">
+    <meta name="twitter:site" content="@VerbalPathways">
+
+    <link rel="icon" href="https://verballychallenged.inthingslimited.com/favicon.ico">
+    <link rel="stylesheet" href="https://verballychallenged.inthingslimited.com/communication-vital/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
+
+    <title>Profound Autism - Verbal Pathways</title>
+
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+
+    <div id="tabs" class="tab-container">
+        <button onclick="window.location.href='/#mission'">Mission</button>
+        <button onclick="window.location.href='/#about'">About Us</button>
+        <button onclick="window.location.href='/#contact'">Contact</button>
+    </div>
+
+    <!-- New Content Section -->
+    <section id="main-content1" class="content-container">
+        <div class="centered-content">
+
+    <h2 class="alignleft">High Anxiety: How We Coach and Inspire</h2>
+    <img src=public/high-anxiety.png class="leftpic no-hover">
+    <p class="leftalign">How we engage is as important to our mission as the lessons themselves. We recognize that each individual may have different learning abilities, they may assimilate at a different pace  and  have many different limitations. </p>
+    <p class="leftalign">Anxiety plays a significant role in the lives of many of these participants so we must adjust accordingly. We also believe it is important that the skills we coach are universally applicable so we follow a two tiered approach. </p>
+    <section>
+        <p>&nbsp;</p>
+    <p class="leftalign">
+        <h3 class="alignleft">Engage</h3>
+        <img src=public/teach-and-inspire.png class="rightpic no-hover" style="max-width:200px;">
+        <ul class="anxietylist">
+            <li><i class="fas fa-users"></i> First we engage groups for introducing skills, demonstrating them and repeating this demonstration. </li>
+            <li><i class="fas fa-user-group"></i> This is followed by individual practice.  </li>
+        </ul>
+    </p>
+    </section>
+    <p class="leftalign">The importance of practice is paramount. Not only does this require effort from the participant, but it also helps coaches recognize each particular participant's strengths and weaknesses. </p>
+    <p class="leftalign">We continue to work with the individual for as long as needed to overcome their hurdles and show progress. Once they achieve a basic understanding and proficiency they are paired with a mentor. The coach oversees the mentor and student.  This is where the individualized focus from the leg up program comes into play. </p>
+    <p class="leftalign">How we engage is as important to our mission as the lessons themselves. We recognize that each individual may have different learning abilities, they may assimilate at a different pace  and  have many different limitations. </p>
+    <p class="leftalign">
+        <img src=public/coach-and-inspire.jpeg class="bigpic no-hover">
+    </p>     
+        </div>
+    </section>
+
+  <div id="footer-placeholder"></div>
+
+    <script>
+        const iframe = document.getElementById("statsIframe");
+
+        function adjustIframeHeight() {
+            const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = iframeContentHeight + "px";
+        }
+
+        // Adjust iframe height on load
+        iframe.onload = adjustIframeHeight;
+
+        // Adjust iframe height on window resize or orientation change
+        window.addEventListener('resize', adjustIframeHeight);
+        window.addEventListener('orientationchange', adjustIframeHeight);
+    </script>
+
+<!-- Load the header and footer -->
+  <script>
+    // Load the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Load the footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
+
+
+
+

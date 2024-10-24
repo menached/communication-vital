@@ -46,15 +46,8 @@
 </head>
 <body>
 
-    <header>
-            <h1>
-                <a href="/" class="star-link no-link-icon">⭐</a> 
-                <a href="/" style="position:relative;left:-15px;" class="star-link no-link-icon">Verbal Pathways</a>
-            </h1>
-            <!--<p class="header-tagline">Unlocking verbal expression in a safe, supportive environment.</p>-->
-            <p class="header-tagline">Eliciting Inspiring and Encouraging Expressive Communication</p>
-            <p style="font-size:.8em;position:relative;top:-10px;" class="header-tagline">in A Safe Supportive Environment</p>
-    </header>
+  <div id="header-placeholder"></div>
+
     <div id="tabs" class="tab-container">
         <button onclick="showSection('mission')">Mission</button>
         <button onclick="showSection('about')">About Us</button>
@@ -102,27 +95,25 @@
     <!-- Area to display response message -->
     <div id="subscribe-message" class="hidden"></div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-envelope"></i> Contact Us </h4>
-                <p>Email:<br><a style="font-size:.8em;" class="no-link-icon" href="mailto:williams-team@inthingslimited.com">williams-team@inthingslimited.com</a></p>
-                <p>Phone: <a class="no-link-icon" href="tel:+16617433143">(661) 743-3143‬</a></p>
-            </div>
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-share-alt"></i> Follow Us </h4>
-                <p><a class="no-link-icon" href="#">Facebook</a></p>
-                <p><a class="no-link-icon" href="#">Twitter</a></p>
-                <p><a class="no-link-icon" href="https://github.com/menached/communication-vital">GitHub</a></p>
-            </div>
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-file"></i> About </h4>
-                <p>We are committed to supporting individuals with communication challenges. Learn more about our <a class="no-link-icon" onclick="showMissionSection()">mission</a> and <a class="no-link-icon" onclick="showwhatWeTeachSection()">initiatives.</a></p>
-            </div>
-        </div>
-    </footer>
+  <div id="footer-placeholder"></div>
 
     <script src="https://verballychallenged.inthingslimited.com/communication-vital/script.js" defer></script>
+<!-- Load the header and footer -->
+  <script>
+    // Load the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Load the footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
 
