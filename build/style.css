@@ -1,4 +1,76 @@
 
+        /* General Styling */
+        .centered-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        /* Tagline Styling */
+        .header-tagline {
+            font-size: 1.2rem;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 900px) {
+            .centered-content {
+                padding: 10px;
+            }
+        }
+
+        /* Mobile Portrait View */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            /* Make tagline smaller and adjust padding */
+            .header-tagline {
+                font-size: 0.7rem; /* Reduce font size further for portrait view */
+                padding: 0 2px;  /* Reduce padding to fit the text properly */
+            }
+
+            iframe {
+                width: calc(100% - 10px); /* Full width minus padding */
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -168,8 +240,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
-
+/* Disable hover effect on the specific image */
+img.no-hover:hover {
+    transform: none;
+    box-shadow: none;
+}
 
 /* Only apply styles for screens 600px or less in width and in portrait mode */
 @media (max-width: 600px) and (orientation: portrait) {
@@ -1006,6 +1081,25 @@ font-size:1.3em;
 }
 
 /* Responsive Adjustments */
+@media (min-width: 601px) {
+.header-tagline2 {    
+    width:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+    font-size:1.1em;
+    }
+.header {
+    padding:10px;
+    }
+.header p {
+font-size:1.1em;
+}
+}
+
+
+
+/* Responsive Adjustments */
 @media (max-width: 600px) {
 .header-tagline {    
     width:100%;
@@ -1022,6 +1116,22 @@ font-size:.7em;
 }
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+.header-tagline2 {    
+    width:100%;
+    text-align:center;
+    margin-top:0px;
+    padding-top:0px;
+    font-size:.6em;
+    }
+.header {
+    padding:10px;
+    }
+.header p {
+font-size:.6em;
+}
+}
 
 
 /* Custom tooltip styles */
@@ -1103,3 +1213,33 @@ h3:hover {
     margin-right: 10px; /* Adds some space between the star and the text */
 }
 
+.leftpic {
+    position:relative;float:left;
+    max-width:200px;
+    padding-right:25px;
+    padding-bottom:10px;
+}
+.bigpic {
+    text-align: center;
+    width:60%;
+    max-width:500px;
+    padding-right:20%;
+    padding-left:20%;
+}
+.rightpic {
+    position:relative;float:right;
+    max-width:200px;
+    padding-right:30px;
+    padding-left:30px;
+}
+.leftalign { 
+    text-align:left;
+}
+.anxietylist {
+    text-align:left;
+    list-style-type: none;  /* Remove default bullets */
+    padding-left: 40px;     /* Add padding to create space for the icons */
+}
+.aligncenter { 
+    text-align:center;
+}

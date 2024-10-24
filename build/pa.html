@@ -40,73 +40,10 @@
 
     <title>Profound Autism - Verbal Pathways</title>
 
-    <style>
-        /* General Styling */
-        .centered-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        /* Tagline Styling */
-        .header-tagline {
-            font-size: 1.2rem;
-            white-space: nowrap; /* Prevent wrapping */
-        }
-
-        iframe {
-            width: 100%;
-            border: none;
-            box-sizing: border-box;
-        }
-
-        /* Responsive Styling */
-        @media (max-width: 900px) {
-            .centered-content {
-                padding: 10px;
-            }
-        }
-
-        /* Mobile Portrait View */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            /* Make tagline smaller and adjust padding */
-            .header-tagline {
-                font-size: 0.7rem; /* Reduce font size further for portrait view */
-                padding: 0 2px;  /* Reduce padding to fit the text properly */
-            }
-
-            iframe {
-                width: calc(100% - 10px); /* Full width minus padding */
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>
-            <a href="#" class="star-link no-link-icon">⭐</a> 
-            <a href="#" style="position:relative;left:-15px;" class="star-link no-link-icon">Verbal Pathways</a>
-        </h1>
-        <!--<p class="header-tagline">Unlocking verbal expression in a safe, supportive environment.</p>-->
-        <p class="header-tagline">Eliciting Inspiring and Encouraging Expressive Communication</p>
-        <p style="font-size:.8em;position:relative;top:-10px;" class="header-tagline">in A Safe Supportive Environment</p>
-    </header>
-    </header>
-    </header>
+    <div id="header-placeholder"></div>
 
     <div id="tabs" class="tab-container">
         <button onclick="window.location.href='/#mission'">Mission</button>
@@ -119,32 +56,14 @@
         <div class="centered-content">
 
 <h2>Profound Autism: A new category on the spectrum?</h2>
-            <p> We support this change as it allows us to specialize on this often overlooked and highly misunderstood, yet significant population of Individuals with autism. Narrowing the spectrum in such a way enables us to focus directly on this group with much greater precision in a manner suited to their specific needs.  </p>
+<p> We support this change as it allows us to specialize on this often overlooked and highly misunderstood, yet significant population of Individuals with autism. Narrowing the spectrum in such a way enables us to focus directly on this group with much greater precision <a href="high-anxiety.html">in a manner suited to their specific needs.</a>  </p>
             <!-- Iframe displaying the stats.html page -->
             <iframe src="stats.html" title="Dynamic Stats Graph" id="statsIframe" scrolling="no"></iframe>
             <p>A separate category of profound autism is warranted because the needs of these children may be neglected if they are not identified.</p>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-envelope"></i> Contact Us </h4>
-                <p>Email:<br><a class="no-link-icon" href="mailto:williams-team@inthingslimited.com">williams-team@inthingslimited.com</a></p>
-                <p>Phone: <a class="no-link-icon" href="tel:+16617433143">(661) 743-3143‬</a></p>
-            </div>
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-share-alt"></i> Follow Us </h4>
-                <p><a class="no-link-icon" href="#">Facebook</a></p>
-                <p><a class="no-link-icon" href="#">Twitter</a></p>
-                <p><a class="no-link-icon" href="https://github.com/menached/communication-vital">GitHub</a></p>
-            </div>
-            <div class="footer-item">
-                <h4><i class="fa-solid fa-file"></i> About </h4>
-                <p>We are committed to supporting individuals with communication challenges. Learn more about our <a href="/#mission" class="no-link-icon">mission</a> and <a href="/#whatWeTeach" class="no-link-icon">initiatives.</a></p>
-            </div>
-        </div>
-    </footer>
+  <div id="footer-placeholder"></div>
 
     <script>
         const iframe = document.getElementById("statsIframe");
@@ -160,6 +79,21 @@
         // Adjust iframe height on window resize or orientation change
         window.addEventListener('resize', adjustIframeHeight);
         window.addEventListener('orientationchange', adjustIframeHeight);
+
+
+            // Load the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    // Load the footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
     </script>
 
 </body>

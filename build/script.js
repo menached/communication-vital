@@ -420,9 +420,10 @@ contentData.Brian = `
     <p>Brian Fleischer is a dual citizen of Mexico and the United States, born in Mexico City and raised in Los Angeles. He brings a wealth of legal experience to the team, including: </p>
     <ul class="custom-list2">
         <li><i class="fas fa-star" style="color: gold;"></i> Bachelor of Arts Economics - 1990 </li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor and admittance to California Bar -1995 </li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Associate Lawyer at Sassano Law Firm 1996-97 </li>
-        <li><i class="fas fa-star" style="color: gold;"></i> Partner Sassano and Fleischer  2002 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Juris Doctor 2000</li>
+        <li><i class="fas fa-star" style="color: gold;"></i>  Associate Lawyer at Sassano Law Firm 2000 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Admittance to California Bar - 2001 </li>
+        <li><i class="fas fa-star" style="color: gold;"></i> Partner Sassano and Fleischer  2006 </li>
     </ul>
     <p>Brian has  20 years of experience in law, handling cases with dedication, intelligence, and attention to detail. Outside of his legal work, Brian is an accomplished drummer who enjoys entertaining and playing music with a local quartet in the Bay Area. </p>
     <h3>Personal Life</h3>
@@ -507,7 +508,7 @@ contentData.whatWeTeach = `
         <img src="https://verballychallenged.inthingslimited.com/public/tiny_homes.jpg" alt="Picnic Outing" style="width: 80%; max-width: 500px; border-radius: 10px;">
     </figure>
     <h3>Leg Up Program</h3>
-    <p>We pair advanced participants with beginners to encourage growth under the watchful eye of trusted caregivers.</p>
+    <p><a href="high-anxiety.html">We pair advanced participants with beginners to encourage growth under the watchful eye of trusted caregivers.</a></p>
         <figure style="text-align: center;">
             <img src="https://verballychallenged.inthingslimited.com/public/leg-up.webp" alt="Leg Up Program" style="width: 80%; max-width: 500px; border-radius: 10px;">
         </figure>
