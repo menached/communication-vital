@@ -398,6 +398,10 @@ a:hover::after {
   margin: 0;
 }
 
+#content-container p {
+  font-size: .9em;
+}
+
 .hidden {
   display: none;  /* Class to hide elements */
 }
@@ -413,6 +417,9 @@ a:hover::after {
 
     #content {
         padding-top: 20px;  /* Adds padding above the content on wider screens */
+    }
+    .highanxietypic {
+        width:30%!important; 
     }
 }
 
@@ -1242,4 +1249,54 @@ h3:hover {
 }
 .aligncenter { 
     text-align:center;
+}
+
+
+header a img {
+    text-decoration: none; /* Disable text decoration for the link inside the header */
+}
+
+header a:hover {
+    text-decoration: none; /* Disable underline on hover for the link in the header */
+}
+
+header a:hover::before {
+    content: none; /* Disable the hover underline effect for links in the header */
+}
+
+header a img:hover {
+    transform: none; /* Disable image hover effect if you have one */
+    box-shadow: none; /* Disable any hover shadow on the image */
+}
+
+
+header a {
+    display: inline-block; /* Ensures the link wraps tightly around the image */
+    line-height: 0; /* Removes extra space caused by line height */
+    vertical-align: middle; /* Aligns the image properly */
+}
+
+header a img {
+    display: block; /* Ensures the image takes up only its own space */
+    max-height: 100%; /* Ensures the image doesn't exceed its container's height */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes any default padding */
+    border: none; /* Removes any default borders */
+}
+
+
+headlink a {
+    display: inline-block; /* Ensures the link wraps tightly around the image */
+    line-height: 0; /* Removes extra space caused by line height */
+    vertical-align: middle; /* Aligns the image properly */
+}
+
+headlink a img {
+    display: block; /* Ensures the image takes up only its own space */
+    max-height: 100%; /* Ensures the image doesn't exceed its container's height */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes any default padding */
+    border: none; /* Removes any default borders */
 }
